@@ -1,0 +1,242 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*Tipografías*/
+
+@font-face {
+    font-family: "GoboldRegular";
+    src: url(css/fonts/gobold/GoboldRegular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GoodBrush";
+    src: url(css/fonts/good_brush/GoodBrush.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(css/fonts/Lato/Lato-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Enlaces*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #782603;
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    z-index: 10;
+}
+
+.logoTituloHeader {
+    display: flex;
+    align-items: center;
+    font-family: "GoodBrush";
+    color: white;
+    column-gap: 10px;
+    font-size: 25px;
+}
+
+.logoTituloHeader img {
+    width: 130px;
+}
+
+#navBarHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "GoboldRegular";
+    color: white;
+    font-size: 19px;
+}
+
+#navBarHeader ul {
+    display: flex;
+    column-gap: 10px;
+}
+
+main {
+    font-family: "Lato";
+    color: black;
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url(images/drr1.jpeg);
+    height: 477px;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 135px;
+    overflow: auto;
+}
+
+
+.tituloMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.tituloMain h3{
+    font-family: "GoboldRegular";
+    font-size: xx-large;
+    color: whitesmoke;
+}
+
+.tituloMain h4 {
+    font-family: "GoboldRegular";
+    font-size: large;
+}
+
+.tituloMain a{
+    background-color: #035578;
+    color: whitesmoke;
+    font-family: "GoodBrush";
+    font-size: x-large;
+    border: 1px solid #035578 ;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.tituloMainVideo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.serviciosDestacados {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.serviciosDestacados h4{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: "GoboldRegular";
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+.tarjetaServiciosDestacados{
+    background-color: #782603c4;
+    border: 1px solid #782603;
+    border-radius: 10px;
+    max-width: 20%;
+    color: whitesmoke;
+    padding: 15px; 
+}
+
+.tarjetaServiciosDestacados h5 {
+    font-size: large;
+    text-align: center;;
+}
+
+.tarjetaServiciosDestacados h6 {
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+    color: black;
+}
+
+.serviciosDestacados h4 {
+    width: 100%;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #035578;
+    width: 100%;
+    height: 110px;
+    z-index: 10;
+    position: relative;
+}
+
+.logoTituloFooter {
+    display: flex;
+    font-family: "GoodBrush";
+    color: white;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logoTituloFooter h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.logoTituloFooter img{
+    width: 110px;
+}
+
+.derechosNavBarFooter{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.derechosFooter{
+    font-family: "Lato";
+    font-size: medium;
+    text-align: center;
+}
+
+.navBarFooter {
+    display: flex;
+    font-family: "GoboldRegular";
+    align-items: center;
+}
+
+.navBarFooter ul{
+    display: flex;
+    font-size: small;
+    column-gap: 5px;
+}
+
+.rrssFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+
