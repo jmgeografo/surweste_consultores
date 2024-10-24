@@ -7,8 +7,7 @@
     box-sizing: border-box;
 }
 
-/*Tipografías*/
-
+/*Tipografías y estilos*/
 @font-face {
     font-family: "GoboldRegular";
     src: url(css/fonts/gobold/GoboldRegular.otf);
@@ -30,69 +29,111 @@
     font-style: normal;
 }
 
+h1{
+    font-size: 3rem; 
+}
+
+h2{
+    font-size: 2.5rem; 
+}
+
+h3{
+    font-size: 2rem; 
+}
+
+h4{
+    font-size: 1.75rem; 
+}
+
+h5{
+    font-size: 1.5rem; 
+}
+
+h6{
+    font-size: 1.25rem; 
+}
+
+h1 {
+    font-family: "GoodBrush";
+}
+
+h2 h3 h4 h5 h6 {
+    font-family: "GoboldRegular";
+}
+
+/*Carrousel Background*/
+@keyframes carouselMain {
+    0% { background-image: url(images/bgsl1.JPG); }
+    20% { background-image: url(images/bgsl2.jpeg); }
+    40% { background-image: url(images/bgsl3.jpeg); }
+    60% { background-image: url(images/bgsl4.png); }
+    80% { background-image: url(images/bgsl5.png); }
+    100% {background-image: url(images/bgsl1.JPG)}
+} 
+
 /*Enlaces*/
 a {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
 }
 
-#body {
+body {
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
+    max-width: 1500px;
 }
 
+/*Encabezado*/
 #header {
     display: flex;
     justify-content: space-around;
-    background-color: #782603;
+    background-color: #8E8D40;
     width: 100%;
-    height: 130px;
+    max-width: 1500px;
     position: fixed;
     z-index: 10;
+    opacity: 0.9;
 }
 
 .logoTituloHeader {
     display: flex;
     align-items: center;
     font-family: "GoodBrush";
-    color: white;
+    color: whitesmoke;
     column-gap: 10px;
-    font-size: 25px;
+    opacity: 1;
 }
 
 .logoTituloHeader img {
     width: 130px;
 }
 
-#navBarHeader{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.nav-item .nav-link {
+    font-size: 1.25rem;
     font-family: "GoboldRegular";
-    color: white;
-    font-size: 19px;
+    opacity: 1;
+    color: whitesmoke;
 }
 
-#navBarHeader ul {
-    display: flex;
-    column-gap: 10px;
+.nav-item .nav-link:hover{
+    color: #3E2723;
+    background-color: whitesmoke;
 }
 
+/*Cuerpo*/
 main {
     font-family: "Lato";
     color: black;
     max-width: 100%;
     min-height: 100vh;
-    background-image: url(images/drr1.jpeg);
-    height: 477px;
+    animation: carouselMain 25s ease-in-out infinite;
     background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
     display: flex;
     flex-direction: column;
-    padding-top: 135px;
+    padding-top: 145px;
     overflow: auto;
 }
 
@@ -108,20 +149,17 @@ main {
 
 .tituloMain h3{
     font-family: "GoboldRegular";
-    font-size: xx-large;
     color: whitesmoke;
 }
 
 .tituloMain h4 {
     font-family: "GoboldRegular";
-    font-size: large;
 }
 
 .tituloMain a{
     background-color: #035578;
     color: whitesmoke;
     font-family: "GoodBrush";
-    font-size: x-large;
     border: 1px solid #035578 ;
     border-radius: 15px;
     padding: 10px;
@@ -147,7 +185,6 @@ main {
     margin-bottom: 10px;
     font-family: "GoboldRegular";
     color: whitesmoke;
-    font-size: xx-large;
 }
 
 .tarjetaServiciosDestacados{
@@ -160,12 +197,10 @@ main {
 }
 
 .tarjetaServiciosDestacados h5 {
-    font-size: large;
     text-align: center;;
 }
 
 .tarjetaServiciosDestacados h6 {
-    font-size: small;
     text-align: center;
     font-style: italic;
     color: black;
@@ -175,12 +210,12 @@ main {
     width: 100%;
 }
 
+/*Pie de página*/
 #footer{
     display: flex;
     justify-content: space-around;
-    background-color: #035578;
+    background-color: #9b837b;
     width: 100%;
-    height: 110px;
     z-index: 10;
     position: relative;
 }
@@ -188,21 +223,14 @@ main {
 .logoTituloFooter {
     display: flex;
     font-family: "GoodBrush";
-    color: white;
+    color: whitesmoke;
     column-gap: 10px;
     align-items: center;
     justify-content: space-around;
 }
 
-.logoTituloFooter h2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-}
-
 .logoTituloFooter img{
-    width: 110px;
+    width: 100px;
 }
 
 .derechosNavBarFooter{
@@ -210,26 +238,15 @@ main {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
     justify-content: space-around;
 }
 
-.derechosFooter{
+.derechosFooter h6{
     font-family: "Lato";
-    font-size: medium;
-    text-align: center;
-}
-
-.navBarFooter {
-    display: flex;
-    font-family: "GoboldRegular";
-    align-items: center;
-}
-
-.navBarFooter ul{
-    display: flex;
+    font-weight: bold;
     font-size: small;
-    column-gap: 5px;
+    text-align: center;
+    color: whitesmoke;
 }
 
 .rrssFooter{
