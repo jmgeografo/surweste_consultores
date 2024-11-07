@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Surweste Consultores: Consultoría en servicios geográficos en Chile, especializada en soluciones de webmapping, planificación territorial y medio ambiente. Nuestro equipo de expertos geógrafos ofrece asesorías técnicas para proyectos en sectores urbanos y rurales.">
+
+    <meta name="keywords" content="consultoría geográfica, webmapping, planificación territorial, servicios ambientales, geógrafos en Chile, proyectos urbanos y rurales, análisis territorial, estudios ambientales, cartografía, servicios de consultoría en Chile">
     
-    <title>Surweste Consultores - Inicio</title>
+    <title>Surweste Consultores - Soluciones Geográficas en Chile</title>
 
     <!--Librería Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <!--Librería Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!--Librería AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--Estilos locales-->
 
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -26,7 +32,7 @@
             <div class="container-fluid d-flex justify-content-around">
                 <div class="d-flex align-items-center">
                     <section class="logoTituloHeader">
-                        <img src="images/logo2.png" alt="Logo de Surweste Consultores">
+                        <a href="#"><img src="images/icons/logo2.png" alt="Logo de Surweste Consultores"></a>
                         <h1>Surweste Consultores</h1>
                     </section>
                 </div>          
@@ -62,120 +68,84 @@
     </header>
 
     <!--Main-->
-    <main id="main">
+    <main id="main-index">
+        <iframe class="videoshort" width="auto" height="560" 
+        src="https://youtube.com/embed/aZj05fm4l1E" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen>
+        </iframe>
         
-        <section class="tituloMainVideo">
-            <section class="tituloMain">
-                <h3>Expertos en soluciones geográficas para potenciar tus proyectos</h3>
-                
-                <a href="pages/contacto.html">Contáctanos</a>
-            </section>
-            <iframe width="320" height="180" src="https://www.youtube.com/embed/UGFCf5VVI2E?si=Pyqd8mKv_-0luU_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-
-        <section class="serviciosDestacados">
-            <h4>Servicios Destacados</h4>
-            <section class="tarjetaServiciosDestacados">
-                <h5>Consultoría en SIG</h5>
-                <h6>Asesoramos en el uso de sistemas de información geográfica para mejorar la toma de decisiones.</h6>
-            </section>
-            <section class="tarjetaServiciosDestacados">
-                <h5>Análisis Geoespacial</h5>
-                <h6>Realizamos análisis y estudios geoespaciales personalizados según tus necesidades.</h6>
-            </section>  
-            <section class="tarjetaServiciosDestacados">
-                <h5>Levantamientos en terreno</h5>
-                <h6>Levantamientos detallados y precisos para proyectos de ingeniería y planificación territorial.</h6>
-            </section>  
-            <section class="tarjetaServiciosDestacados">
-                <h5>Webmapping</h5>
-                <h6>Creación de mapas digitales interactivos y de alta calidad.</h6>
-            </section>   
-        </section>                
-
-        <section class="serviciosDestacados">
-            <h4>Proyectos Exitosos</h4>
-            <section class="tarjetaServiciosDestacados">
-                <h5>Cochamó a un click.cl</h5>
-                <h6>Diseñamos, creamos y programamos un webmap interactivo con la riqueza patrimonial humana y natural en la comuna de Cochamó, Patagonia norte de Chile.</h6>
-            </section>  
-            <section class="tarjetaServiciosDestacados">
-                <h5>Medio Humano DIA Cóndores BESS</h5>
-                <h6>Levantamos en la comuna de Alto Hospicio la información necesaria del componente geográfico humano para la Declaración de Impacto Ambiental de la planta fotovoltaica Cóndores.</h6>
-            </section>  
-        </section>
-
-        <section class="serviciosDestacados">
-            <h4>Nuestros Clientes</h4>
-            <section class="tarjetaServiciosDestacados">
-            <h5>Fundación Puelo Patagonia</h5>
-            <h6>El webmap creado ha sido muy útil para las comunidades de Cochamó, tanto educativas, municipales, turísticas, entre otros. El trabajo de Surweste es de calidad y pensado en base a las necesidades que les expusimos</h6>
-            </section>
-            <section class="tarjetaServiciosDestacados">
-            <h5>Ingeniería y Montajes Ciel</h5>
-            <h6>Surweste realiza un trabajo pulcro, responsable, atractivo y a precios competitivos. Es una consultora recomendable.</h6>
-            </section>
-        </section>    
-       
+        <aside class="asideaccion">
+            <div data-aos="flip-left">
+                <h5>¿Listo para mejorar tus proyectos geográficos?</h5>
+                <article><p>Contáctanos para una consultoría personalizada y comienza a transformar tus ideas en soluciones geográficas efectivas y convenientes.</p></article>
+                <a href="contacto.html" class="btn btn-primary"><h5>¡Contáctanos!</h5></a>
+                <div class="asideaccion-icons">
+                    <a href="https://wa.me/56992403309/?text=Hola,%20somos%20Surweste%20Consultores.%20Cuéntanos%20qué%20necesitas%20para%20contactar%20nuestros%20profesionales"><i class="fa-brands fa-whatsapp fa-xl hover"></i></a>
+                    <a href="mailto:contacto@surwesteconsultores.cl"><i class="fa-regular fa-envelope fa-xl"></i></a>
+                </div>
+            </div>    
+        </aside>
+        
     </main>
 
     <!--Footer-->
     <footer id="footer">
-        <nav class="navbar navbar-expand-lg navbar-dark w-100">
-            <div class="container-fluid d-flex justify-content-around">
-                <div class="d-flex align-items-center">
-                    <section class="logoTituloFooter">
-                        <img src="images/logo2.png" alt="Logo de Surweste Consultores">
-                        <h4>Surweste Consultores</h4>
-                    </section>
+        <section class="logoTituloFooter">
+            <a href="#"><img src="images/icons/logo2.png" alt="Logo de Surweste Consultores"></a>
+            <h4 class="tituloFooter">Surweste Consultores</h4>
+        </section>
+
+        <section class="navBarFooter">
+            <nav class="navbar navbar-expand-lg navbar-dark w-100">
+                <button class="navbar-toggler mx-auto border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/servicios.html">Servicios</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/portafolio.html">Portafolio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
+                            </li>                 
                 </div>
+            </nav>
+        </section>
 
-                <div class="d-flex align-items-center">
-                    <section class="derechosNavBarFooter">
-                        <section class="derechosFooter">
-                        <h6>© Todos los derechos reservados. Creado por José Miguel Rojas.<br>Dirección: Augusto Villanueva 20, Ñuñoa, Chile.</h6>
-                        </section>
-                        
-                        <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mx-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="pages/servicios.html">Servicios</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="pages/portafolio.html">Portafolio</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="pages/nosotros.html">Nosotros</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
-                                </li>                 
-                        </div>
-                    </section>    
-                </div>
-                    <section class="rrssFooter">
-                    <a href="https://wa.me/56992403309/?text=Hola,%20somos%20Surweste%20Consultores.%20Cuéntanos%20qué%20necesitas%20para%20contactar%20nuestros%20profesionales"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
-                    <a href="https://www.linkedin.com/in/surweste-consultores-278285330/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                    <a href="https://www.facebook.com/surwesteconsultores/"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
-                    <a href="https://www.instagram.com/surwesteconsultores/"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                    <a href="mailto:surwesteconsultores@gmail.com"><i class="fa-regular fa-envelope fa-xl"></i></a>  
-                    </section>  
-            </div>
-        </nav>
+        <section class="derechosFooter">
+            <p>© Todos los derechos reservados. Creado por José Miguel Rojas.<br>Dirección: San Antonio 510, Santiago, Chile.
+            </p>
+        </section>
+                
+        <section class="rrssFooter">
+            <a href="https://wa.me/56992403309/?text=Hola,%20somos%20Surweste%20Consultores.%20Cuéntanos%20qué%20necesitas%20para%20contactar%20nuestros%20profesionales"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/surweste-consultores-278285330/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://www.facebook.com/surwesteconsultores/"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+            <a href="https://www.instagram.com/surwesteconsultores/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="mailto:contacto@surwesteconsultores.cl"><i class="fa-regular fa-envelope fa-xl"></i></a>  
+        </section>          
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>AOS.init();</script>
     
 </body>
 </html>

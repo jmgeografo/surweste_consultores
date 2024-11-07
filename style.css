@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/*Tipografías y estilos*/
+/*Tipografías*/
 @font-face {
     font-family: "GoboldRegular";
     src: url(css/fonts/gobold/GoboldRegular.otf);
@@ -29,30 +29,32 @@
     font-style: normal;
 }
 
+/*Tamaño de fuentes*/
 h1{
-    font-size: 3rem; 
-}
-
-h2{
     font-size: 2.5rem; 
 }
 
-h3{
+h2{
     font-size: 2rem; 
 }
 
-h4{
+h3{
     font-size: 1.75rem; 
 }
 
-h5{
+h4{
     font-size: 1.5rem; 
 }
 
-h6{
+h5{
     font-size: 1.25rem; 
 }
 
+h6{
+    font-size: 1rem; 
+}
+
+/*Fuentes escogidas*/
 h1 {
     font-family: "GoodBrush";
 }
@@ -61,22 +63,17 @@ h2, h3, h4, h5, h6 {
     font-family: "GoboldRegular";
 }
 
-/*Carrousel Background*/
-@keyframes carouselMain {
-    0% { background-image: url(images/bgsl1.JPG); }
-    20% { background-image: url(images/bgsl2.jpeg); }
-    40% { background-image: url(images/bgsl3.jpeg); }
-    60% { background-image: url(images/bgsl4.png); }
-    80% { background-image: url(images/bgsl5.png); }
-    100% {background-image: url(images/bgsl1.JPG)}
-} 
+p {
+    font-family: "Lato";
+}
 
 /*Enlaces*/
 a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #FAF3E0;
 }
 
+/*Contenido*/
 body {
     display: flex;
     flex-direction: column;
@@ -87,289 +84,307 @@ body {
 #header {
     display: flex;
     justify-content: space-around;
-    background-color: #8E8D40F2;
+    background: linear-gradient(135deg, #8E8D40F2 30%, #6B705CF2 50%, #3D5A80F2 80%);
     width: 100%;
     max-width: 1500px;
     position: fixed;
-    z-index: 10;
-    
+    z-index: 10
 }
 
 .logoTituloHeader {
     display: flex;
     align-items: center;
     font-family: "GoodBrush";
-    color: whitesmoke;
+    color: #FAF3E0;
     column-gap: 10px;
 }
 
 .logoTituloHeader img {
-    width: 130px;
+    width: 7.5em;
+}
+
+.tituloHeader {
+    flex-wrap: wrap;
 }
 
 .nav-item .nav-link {
     font-size: 1.25rem;
     font-family: "GoboldRegular";
-    color: whitesmoke;
+    color: #FAF3E0;
 }
 
 .nav-item .nav-link:hover{
     color: #3E2723;
-    background-color: whitesmoke;
+    background-color: #FAF3E0;
 }
 
 /*Cuerpo*/
 main {
-    font-family: "Lato";
-    color: black;
     max-width: 100%;
     min-height: 100vh;
-    animation: carouselMain 25s ease-in-out infinite;
+    background-image: url(images/bgsl.gif);
     background-attachment: fixed;
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding-top: 145px;
+    padding-top: 8.5rem;
     padding-left: 10px;
     padding-right: 10px;
+    display: grid;
+    column-gap: 3%;
 }
 
+/*Contenedores*/
+#main-index {
+    grid-template-rows: auto;
+    grid-template-columns: ;
+    grid-template-areas:
+}
 
-.tituloMain {
-    display: flex;
+#main-servicios {
     align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: space-around;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "title title title title"
+        "target target target target"
+        ". aside aside ."
+        ;
 }
 
-.tituloMain h3{
-    font-family: "GoboldRegular";
-    color: whitesmoke;
-}
-
-.tituloMain h4 {
-    font-family: "GoboldRegular";
-}
-
-.tituloMain a{
-    background-color: #035578;
-    color: whitesmoke;
-    font-family: "GoodBrush";
-    border: 1px solid #035578 ;
-    border-radius: 15px;
-    padding: 10px;
-}
-
-.tituloMainVideo {
-    display: flex;
+#main-portafolio {
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.serviciosDestacados {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.serviciosDestacados h4{
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-    font-family: "GoboldRegular";
-    color: whitesmoke;
-}
-
-.tarjetaServiciosDestacados{
-    background-color: #782603c4;
-    border: 1px solid #782603;
-    border-radius: 10px;
-    max-width: 20%;
-    color: whitesmoke;
-    padding: 15px; 
-}
-
-.tarjetaServiciosDestacados h5 {
-    text-align: center;;
-}
-
-.tarjetaServiciosDestacados h6 {
-    text-align: center;
-    font-style: italic;
-    color: black;
-}
-
-.serviciosDestacados h4 {
-    width: 100%;
-}
-
-/*Pie de página*/
-#footer{
-    display: flex;
-    justify-content: space-around;
-    background-color: #9b837b;
-    width: 100%;
-    z-index: 10;
-    position: relative;
-}
-
-.logoTituloFooter {
-    display: flex;
-    font-family: "GoodBrush";
-    color: whitesmoke;
-    column-gap: 10px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.logoTituloFooter img{
-    width: 100px;
-}
-
-.derechosNavBarFooter{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.derechosFooter h6{
-    font-family: "Lato";
-    font-weight: bold;
-    font-size: small;
-    text-align: center;
-    color: whitesmoke;
-}
-
-.rrssFooter{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: 2.5fr 2.5fr 1fr;
+    grid-template-areas:
+        "title title aside"
+        "target target aside"
+        "target target aside"
+        ;
 }
 
 #main-nosotros {
-    display: grid;
     align-items: start;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 3%;
+    grid-template-columns: 2fr 2fr 1fr;
     grid-template-areas: 
-        "titulonosotros titulonosotros titulonosotros titulonosotros titulonosotros aside"
-        "subtitulonosotros subtitulonosotros subtitulonosotros subtitulonosotros subtitulonosotros aside"
-        "articulonosotros articulonosotros articulonosotros articulonosotros articulonosotros aside"
-        "subtitulosnosotros subtitulosnosotros subtitulosnosotros subtitulosnosotros subtitulosnosotros aside"
-        "tarjeta tarjeta tarjeta tarjeta tarjeta aside";
+        "title title aside"
+        "article vidlong aside"
+        "article vidlong2 aside"
+        "subtitle subtitle aside"
+        "cardGroup cardGroup aside";
+    gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;    
 }
 
-.titulo {
-    grid-area: titulonosotros; 
+#main-contacto {
+    align-items: st;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-areas:
+        "title title title"
+        "article formu mapa"
+        "article formu article2"
+        ;
+}
+
+#form {
+    font-family: "GoboldRegular";
+    color: #FAF3E0;
+    background: #225038e6;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+#form .form-control {
+    font-family: "Lato";
+    color: gray;
+}
+
+/*Elementos*/
+.titulo, .subtitulo {
+    grid-area: title;
+    text-align: center;
     color: #FAF3E0; 
     justify-self: center; 
     align-self: center;
     margin-top: 5px;
+    margin-bottom: 5px;
     text-shadow: 1px 1px black;
-    background-color: #A1887FCC;
-    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #A1887FB3;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .subtitulo {
-    grid-area: subtitulonosotros; 
-    color: #FAF3E0;
-    justify-self: center; 
-    align-self: center;
-    text-shadow: 1px 1px black;
-    background-color: #A1887FCC;
-    padding: 5px;
+    grid-area: subtitle; 
 }
 
-.subtitulo2 {
-    grid-area: subtitulosnosotros; 
+.articulo, .articulo2 {
+    grid-area: article; 
     color: #FAF3E0;
-    justify-self: center; 
-    align-self: center;
-    text-shadow: 1px 1px black;
-    background-color: #A1887FCC;
-    padding: 5px;    
-}
-
-.articulo {
-    grid-area: articulonosotros; 
-    color: #616161;
-    background-color: #F5F5F5D9 ; 
-    justify-self: center; 
-    align-self: center;
+    background-color: #424242CC ; 
+    justify-self: stretch; 
+    align-self: start;
     text-align: center;
-    margin: 25px;
+    width: 100%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     font-family: "Lato";
 }
 
-.card-group {
-    grid-area: tarjeta;  
-    padding: 20px; 
-    justify-content: center;
+.articulo2 {
+    grid-area: article2; 
 }
+
+.card-group {
+    grid-area: cardGroup;
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .card {
+    grid-area: target;  
+    padding: 1rem;
+    margin-top: 0.5rem; 
+    max-width: 100%;
     color: #FAF3E0; 
-    background-color: #424242D9; 
-    max-width: 50%;
+    background-color: #424242D9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .card img {
-    max-height: 180px;
-    margin-bottom: 10px;
+    max-height: 10rem;
+    margin-bottom: 0.1rem;
 }
 
-.card .btn-primary, .banner-fijo .btn-primary{ 
+.card .btn-primary, .asideaccion .btn-primary, #form .btn-primary  { 
     background-color: #D84315;
     border: none;
     color: #FAF3E0;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 4px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     text-decoration: none;
+    align-self: center;;
 }
 
-.card .btn-primary:hover, .banner-fijo .btn-primary:hover {
+.card .btn-primary:hover, .asideaccion .btn-primary:hover, #form .btn-primary:hover {
     background-color:#FAF3E0;
     color: #3E2723;
     transform: scale(1.2);
 }
 
-.banner-fijo {
+.videolong, .videolong-2 {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.videolong-2 {
+    grid-area: vidlong2;
+}
+
+/*Aside*/
+
+.asideaccion {
     grid-area: aside;
     align-self: start; 
     position: sticky;
-    top: 150px;
+    top: 9rem;
     width: 100%;
-    padding: 15px;
+    padding: 1.5rem;
     background-color: #225038e6; 
     color: #FAF3E0;
-    border-radius: 8px;
+    border-radius: 15px;
     text-align: center;
     z-index: 1000;
     margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.banner-icons {
-    margin-top: 15px;
+.asideaccion-icons {
+    margin-top: 0.9rem;
 }
 
-.banner-icons a {
+.asideaccion-icons a {
     margin: 0 8px;
     font-size: 1.5em;
 }
 
-.banner-icons a:hover {
-    background-color: #FAF3E0;
-    color: #3E2723;
+/*Pie de página*/
+#footer{
+    display: grid;
+    background: linear-gradient(180deg, #9b837b, #8a736d, #76665b, #5f5754, #3e3c3a);
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "logtit navfoot rrss"
+        "logtit derechos rrss"
+        ;
+}
+
+.logoTituloFooter {
+    display: flex;
+    font-family: "GoodBrush";
+    color: #FAF3E0;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: logtit;
+}
+
+.logoTituloFooter img{
+    width: 6rem;
+}
+
+.tituloFooter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navBarFooter{
+    align-items: center;
+    grid-area: navfoot;
+}
+
+.derechosFooter {
+    justify-content: center;
+    text-align: center;
+    color: #FAF3E0;
+    grid-area: derechos;
+}
+
+.rrssFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    column-gap: 10px;
+    grid-area: rrss;
+}
+
+.mapa {grid-area: mapa;
+}
+
+.mapa iframe {
+    border-radius: 15px;
+}
+
+#form {grid-area: formu;}
+
+.videoshort {
+    grid-area: vidshort;
 }
