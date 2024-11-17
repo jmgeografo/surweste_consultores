@@ -1,0 +1,54 @@
+/*Pie de página*/
+#footer{
+    display: grid;
+    background: linear-gradient(180deg, #9b837b, #8a736d, #76665b, #5f5754, #3e3c3a);
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "logtit navfoot rrss"
+        "logtit derechos rrss"
+        ;
+}
+
+.logoTituloFooter {
+    display: flex;
+    font-family: "GoodBrush";
+    color: #FAF3E0;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: logtit;
+}
+
+.logoTituloFooter img{
+    width: 5rem;
+}
+
+.tituloFooter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navBarFooter{
+    align-items: center;
+    grid-area: navfoot;
+}
+
+.derechosFooter {
+    justify-content: center;
+    text-align: center;
+    color: #FAF3E0;
+    grid-area: derechos;
+}
+
+.rrssFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    column-gap: 1rem;
+    grid-area: rrss;
+}

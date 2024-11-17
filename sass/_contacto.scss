@@ -1,0 +1,28 @@
+#form {
+    font-family: "GoboldRegular";
+    color: #FAF3E0;
+    background: #225038e6;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    grid-area: formu;
+    align-self: stretch;
+}
+
+#form .form-control {
+    font-family: "Lato";
+}
+
+#form .form-control::placeholder {
+    font-size: smaller;
+    color: lightslategray;
+}
+
+#form .botones{
+    justify-self: center;
+}
+
+.mapa {
+    grid-area: mapa;
+}

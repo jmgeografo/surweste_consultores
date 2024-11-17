@@ -1,0 +1,181 @@
+@use "presets/reset";
+@use "presets/header";
+@use "presets/main";
+@use "presets/footer";
+@use "presets/aside";
+
+@use "_index.scss";
+@use "_servicios.scss";
+@use "_portafolio.scss";
+@use "_nosotros.scss";
+@use "_contacto.scss";
+
+@use "presets/queries";
+
+$color-primario: #FAF3E0;
+$color-secundario: #3E2723;
+$fuente-tamaño-base: 1rem;
+
+h1 {font-size: $fuente-tamaño-base*2.5;};
+h2 { font-size: $fuente-tamaño-base*2;};
+h3 { font-size: $fuente-tamaño-base*1.75;};
+h4 { font-size: $fuente-tamaño-base*1.5;};
+h5 { font-size: $fuente-tamaño-base*1.25;};
+h6 { font-size: $fuente-tamaño-base;};
+
+
+/*Tipografías*/
+@font-face {
+    font-family: "GoboldRegular";
+    src: url(../css/fonts/gobold/GoboldRegular.otf);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "GoodBrush";
+    src: url(../css/fonts/good_brush/GoodBrush.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../css/fonts/Lato/Lato-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*Fuentes escogidas*/
+h1 {
+    font-family: "GoodBrush";
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "GoboldRegular";
+}
+
+p {
+    font-family: "Lato";
+}
+
+/*Enlaces*/
+a {
+    color: $color-primario;
+}
+
+
+/*Elementos*/
+.titulo, .subtitulo {
+    grid-area: title;
+    text-align: center;
+    color: $color-primario; 
+    justify-self: center; 
+    align-self: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #A1887FB3;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.subtitulo {
+    grid-area: subtitle; 
+}
+
+.articulo {
+    grid-area: article; 
+    color: $color-primario;
+    background-color: #424242CC ; 
+    justify-self: stretch; 
+    align-self: start;
+    text-align: justify;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: "Lato";
+    
+
+    & h2 {
+        text-align: center;
+    }
+}
+
+.card-group {
+    grid-area: cardGroup;
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container .mb-2 {
+    grid-area: contenedorportafolio;
+}
+
+.card {
+    grid-area: target;  
+    padding: 1rem;
+    margin-top: 0.5rem; 
+    max-width: 100%;
+    color: $color-primario; 
+    background-color: #424242D9;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card p{
+    text-align: justify;
+}
+
+#main-servicios .card img {
+    width: 10rem;
+}
+
+.card img {
+    max-height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.card .btn-primary, .asideaccion .btn-primary, #form .btn-primary, .btn-secondary, .accordion, .accordion-item, .accordion-header, .accordion-body, .accordion-collapse, .accordion-button, .accordion-button:not(.collapsed), .accordion-btn-icon { 
+    background-color: #D84315;
+    border: none;
+    color: $color-primario;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    align-self: center;
+    box-shadow: none;
+}
+
+.card .btn-primary:hover, .asideaccion .btn-primary:hover, #form .btn-primary:hover, .btn-secondary:hover, .accordion-button:hover, .accordion-btn-icon:hover {
+    background-color:$color-primario;
+    color: #3E2723;
+    transform: scale(1.2);
+}
+
+.accordion-button{
+    gap: 1rem;
+}
+
+.dropdown-menu, .dropdown-item {
+    background-color: #D84315;
+    color: $color-primario;
+    font-family: "Lato";
+}
+
+
+
+
+
+.accordion-body li {
+    text-align: justify;
+}
+
+

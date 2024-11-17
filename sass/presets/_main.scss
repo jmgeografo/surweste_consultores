@@ -1,0 +1,99 @@
+/*Cuerpo*/
+main {
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/bgsl.gif);
+    background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+    padding-top: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    column-gap: 3%;
+}
+
+/*Contenedores*/
+#main-index {
+    grid-template-rows: auto;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr;
+    grid-template-areas:
+        "sloganswc sloganswc mapaswc aside"
+        "vidshort fotoportada mapaswc aside"
+        "vidshort testimon mapaswc aside"
+    ;
+    align-items: start;
+    gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#main-servicios {
+    align-items: start;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "title title title title"
+        "target target target target"
+        "faq faq aside aside"
+        ;
+    gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;   
+}
+
+#main-portafolio {
+    align-items: start;
+    grid-template-rows: auto;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+        "title aside"
+        "contenedorportafolio aside"
+        ;
+    gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;      
+}
+
+#main-nosotros {
+    align-items: start;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    grid-template-areas: 
+        "title title aside"
+        "article vidlong aside"
+        "article vidlong2 aside"
+        "subtitle subtitle aside"
+        "cardGroup cardGroup aside";
+    gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;    
+}
+
+#main-contacto {
+    align-items: start;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-areas:
+        "title title title"
+        "article article formu"
+        "mapa faq formu";
+    gap: 1.5rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;   
+    }
