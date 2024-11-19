@@ -6,11 +6,17 @@
     <title>Mapa de Proyectos</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <style>
+        *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 10px;
+}
         #map {
             height: 100vh;
-            margin: 0;
-            padding: 0;
-            border: 0;
+            
         }
 
         @font-face {
@@ -65,7 +71,7 @@
 
     L.control.zoom({
     position: 'bottomleft'
-    }).addTo(map);
+    }).addTo(map).remove(map);
 
     L.control.scale({
         metric: true, imperial: false}).addTo(map);

@@ -1,3 +1,451 @@
-@media screen {
-    
+@media screen and (max-width: 576px)
+    {
+        main {
+            background-size: contain;
+        }
+
+        #main-index {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "sloganswc"
+            "fotoportada"
+            "vidshort"
+            "mapaswc"
+            "testimon"
+            "aside"
+            ;
+            align-items: center;
+            justify-items: center;
+            padding-top: 10.5rem;
+        }
+
+        .nav-item {
+            justify-content: center;
+        }
+
+        .mapaleaflet {
+            height: 100vh;
+        }
+
+        .videoshort {
+            height: 100vh;
+        }
+
+        #main-servicios {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "title"
+                "target"
+                "target"
+                "target"
+                "target"
+                "faq"
+                "aside"
+            ;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10.5rem;
+        }
+
+        #main-portafolio {
+            grid-template-rows: auto;
+            grid-template-columns: 350px;
+            grid-template-areas:
+                "title"
+                "contenedorportafolio"
+                "aside"
+            ;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10.5rem;
+        }
+
+        #main-nosotros {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "title"
+                "article"
+                "subtitle"
+                "cardGroup"
+                "vidlong"
+                "vidlong2"
+                "aside"
+            ;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10.5rem;
+        }
+
+        .videolong, .videolong-2 {
+            width: 100%;
+        }
+
+                
+        #main-contacto {
+            align-items: center;
+            justify-content: center;
+            padding-top: 10rem;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "title"
+            "formu"
+            "article"
+            "mapa"
+            "faq";
+        }
+
+        #footer {
+            grid-template-rows: auto;
+            row-gap: 1rem;
+            margin: 0 1rem 1rem 0; 
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: 
+        "logtit navfoot"
+        "rrss rrss"
+        "derechos derechos"
+        ;
+
+        }
+    }
+
+@media screen and (min-width: 577px) and (max-width: 768px) and (orientation: portrait)
+    {
+        main {
+            background-size: contain;
+        }
+
+        #main-index {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "sloganswc"
+            "fotoportada"
+            "vidshort"
+            "mapaswc"
+            "testimon"
+            "aside"
+            ;
+            align-items: center;
+            justify-items: center;
+            padding-top: 9.5rem;
+        }
+
+        .mapaleaflet {
+            height: 100vh;        
+        }
+
+        .videoshort {
+            height: 100vh;
+        }
+
+        #main-servicios {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "title title"
+                "target target"
+                "target target"
+                "faq faq"
+                "aside aside"
+            ;
+            align-items: center;
+            justify-content: center;
+            padding-top: 9.5rem;
+        }
+
+        #main-portafolio {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "title"
+                "contenedorportafolio"
+                "aside"
+            ;
+            align-items: center;
+            justify-content: center;
+            padding-top: 9.5rem;
+        }
+
+        #main-nosotros {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "title"
+                "article"
+                "subtitle"
+                "cardGroup"
+                "vidlong"
+                "vidlong2"
+                "aside"
+            ;
+            align-items: center;
+            justify-content: center;
+            padding-top: 9.5rem;
+        }
+
+        .videolong, .videolong-2 {
+            width: 100%;
+            height: 21rem;
+        }
+                
+        #main-contacto {
+            align-items: center;
+            justify-content: center;
+            padding-top: 9rem;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "title title"
+            "formu formu"
+            "article article"
+            "faq mapa"
+            ;
+        }
+
+        .mapa {
+            grid-area: mapa;
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        #footer {
+            grid-template-rows: auto;
+            row-gap: 1rem;
+            margin: 0 1rem 1rem 0; 
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: 
+        "logtit navfoot"
+        "rrss rrss"
+        "derechos derechos"
+        ;
+
+        }
+
+    }
+
+@media screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape)
+{
+    main {
+        background-size: cover;
+    }
+
+    #main-index {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "sloganswc sloganswc"
+        "vidshort mapaswc"
+        "fotoportada testimon"
+        "aside aside"
+        ;
+        align-items: center;
+        justify-items: center;
+        padding-top: 9.5rem;
+    }
+
+    .mapaleaflet {
+        height: 100vh;        
+    }
+
+    .videoshort {
+        height: 100vh;
+    }
+
+    #main-servicios {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "title title"
+            "target target"
+            "target target"
+            "faq faq"
+            "aside aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9.5rem;
+    }
+
+    #main-portafolio {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "contenedorportafolio"
+            "aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9.5rem;
+    }
+
+    #main-nosotros {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "article vidlong"
+            "article vidlong2"
+            "subtitle subtitle"
+            "cardGroup cardGroup"
+            "aside aside"
+            ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9.5rem;
+    }
+
+    .videolong, .videolong-2 {
+        width: 100%;
+        height: 21rem;
+    }
+            
+    #main-contacto {
+        align-items: center;
+        justify-content: center;
+        padding-top: 9rem;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "title title"
+        "formu article"
+        "faq mapa"
+        ;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    #footer {
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        margin: 0 1rem 1rem 0; 
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+    "logtit navfoot"
+    "rrss rrss"
+    "derechos derechos"
+    ;
+
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px)
+{
+    main {
+        background-size: cover;
+    }
+
+    #main-index {
+        grid-template-rows: auto;
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-areas:
+        "sloganswc sloganswc mapaswc"
+        "vidshort fotoportada mapaswc"
+        "vidshort testimon mapaswc"
+        "aside aside aside"
+
+        ;
+        align-items: flex-start;
+        justify-items: center;
+        padding-top: 9.5rem;
+    }
+
+    .mapaleaflet {
+        height: 100vh;        
+    }
+
+    .videoshort {
+        height: 100vh;
+    }
+
+    #main-servicios {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "title title"
+            "target target"
+            "target target"
+            "faq faq"
+            "aside aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9.5rem;
+    }
+
+    #main-portafolio {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "contenedorportafolio"
+            "aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9.5rem;
+    }
+
+    #main-nosotros {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "article vidlong"
+            "article vidlong2"
+            "subtitle subtitle"
+            "cardGroup cardGroup"
+            "aside aside"
+            ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9.5rem;
+    }
+
+    .videolong, .videolong-2 {
+        width: 100%;
+        height: 21rem;
+    }
+            
+    #main-contacto {
+        align-items: center;
+        justify-content: center;
+        padding-top: 9rem;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+        "title title"
+        "formu article"
+        "faq mapa"
+        ;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    #footer {
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        margin: 0 1rem 1rem 0; 
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+    "logtit navfoot"
+    "rrss rrss"
+    "derechos derechos"
+    ;
+
+    }
+
 }
