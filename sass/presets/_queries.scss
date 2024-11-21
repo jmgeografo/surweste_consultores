@@ -1,264 +1,150 @@
-@media screen and (max-width: 576px)
-    {
-        main {
-            background-size: contain;
-        }
+@media screen and (max-width: 576px) {
+    main {
+        background-size: contain;
+    }
 
-        #main-index {
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-            "sloganswc"
+    #main__index {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "main__index__sloganswc"
             "fotoportada"
             "vidshort"
             "mapaswc"
             "testimon"
             "aside"
-            ;
-            align-items: center;
-            justify-items: center;
-            padding-top: 10.5rem;
-        }
+        ;
+        align-items: center;
+        justify-items: center;
+        padding-top: 10.5rem;
+    }
 
-        .nav-item {
-            justify-content: center;
-        }
+    .nav-item {
+        justify-content: center;
+    }
 
-        .mapaleaflet {
-            height: 100vh;
-        }
+    .main__index__mapaleaflet {
+        height: 100vh;
+    }
 
-        .videoshort {
-            height: 100vh;
-        }
+    .main__index__videoshort {
+        height: 100vh;
+    }
 
-        #main-servicios {
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-                "title"
-                "target"
-                "target"
-                "target"
-                "target"
-                "faq"
-                "aside"
-            ;
-            align-items: center;
-            justify-content: center;
-            padding-top: 10.5rem;
-        }
+    #main__servicios {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "target"
+            "target"
+            "target"
+            "target"
+            "faq"
+            "aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10.5rem;
+    }
 
-        #main-portafolio {
-            grid-template-rows: auto;
-            grid-template-columns: 350px;
-            grid-template-areas:
-                "title"
-                "contenedorportafolio"
-                "aside"
-            ;
-            align-items: center;
-            justify-content: center;
-            padding-top: 10.5rem;
-        }
+    #main__portafolio {
+        grid-template-rows: auto;
+        grid-template-columns: 350px;
+        grid-template-areas:
+            "title"
+            "contenedorportafolio"
+            "aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10.5rem;
+    }
 
-        #main-nosotros {
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                "title"
-                "article"
-                "subtitle"
-                "cardGroup"
-                "vidlong"
-                "vidlong2"
-                "aside"
-            ;
-            align-items: center;
-            justify-content: center;
-            padding-top: 10.5rem;
-        }
+    #main__nosotros {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "article"
+            "subtitle"
+            "cardGroup"
+            "vidlong"
+            "vidlong2"
+            "aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10.5rem;
+    }
 
-        .videolong, .videolong-2 {
-            width: 100%;
-        }
+    .main__nosotros__videolong,
+    .main__nosotros__videolong__2 {
+        width: 100%;
+    }
 
-                
-        #main-contacto {
-            align-items: center;
-            justify-content: center;
-            padding-top: 10rem;
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-template-areas:
+
+    #main__contacto {
+        align-items: center;
+        justify-content: center;
+        padding-top: 10rem;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
             "title"
             "formu"
             "article"
             "mapa"
             "faq";
-        }
-
-        #footer {
-            grid-template-rows: auto;
-            row-gap: 1rem;
-            margin: 0 1rem 1rem 0; 
-            grid-template-columns: 2fr 1fr;
-            grid-template-areas: 
-        "logtit navfoot"
-        "rrss rrss"
-        "derechos derechos"
-        ;
-
-        }
     }
 
-@media screen and (min-width: 577px) and (max-width: 768px) and (orientation: portrait)
-    {
-        main {
-            background-size: contain;
-        }
+    #footer {
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        margin: 0 1rem 1rem 0;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "logtit navfoot"
+            "rrss rrss"
+            "derechos derechos"
+        ;
 
-        #main-index {
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-            "sloganswc"
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+    main {
+        background-size: contain;
+    }
+
+    #main__index {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "main__index__sloganswc"
             "fotoportada"
             "vidshort"
             "mapaswc"
             "testimon"
             "aside"
-            ;
-            align-items: center;
-            justify-items: center;
-            padding-top: 9.5rem;
-        }
-
-        .mapaleaflet {
-            height: 100vh;        
-        }
-
-        .videoshort {
-            height: 100vh;
-        }
-
-        #main-servicios {
-            grid-template-rows: auto;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "title title"
-                "target target"
-                "target target"
-                "faq faq"
-                "aside aside"
-            ;
-            align-items: center;
-            justify-content: center;
-            padding-top: 9.5rem;
-        }
-
-        #main-portafolio {
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                "title"
-                "contenedorportafolio"
-                "aside"
-            ;
-            align-items: center;
-            justify-content: center;
-            padding-top: 9.5rem;
-        }
-
-        #main-nosotros {
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                "title"
-                "article"
-                "subtitle"
-                "cardGroup"
-                "vidlong"
-                "vidlong2"
-                "aside"
-            ;
-            align-items: center;
-            justify-content: center;
-            padding-top: 9.5rem;
-        }
-
-        .videolong, .videolong-2 {
-            width: 100%;
-            height: 21rem;
-        }
-                
-        #main-contacto {
-            align-items: center;
-            justify-content: center;
-            padding-top: 9rem;
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-            "title title"
-            "formu formu"
-            "article article"
-            "faq mapa"
-            ;
-        }
-
-        .mapa {
-            grid-area: mapa;
-            border-radius: 10px;
-            height: 100%;
-        }
-
-        #footer {
-            grid-template-rows: auto;
-            row-gap: 1rem;
-            margin: 0 1rem 1rem 0; 
-            grid-template-columns: 2fr 1fr;
-            grid-template-areas: 
-        "logtit navfoot"
-        "rrss rrss"
-        "derechos derechos"
-        ;
-
-        }
-
-    }
-
-@media screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape)
-{
-    main {
-        background-size: cover;
-    }
-
-    #main-index {
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "sloganswc sloganswc"
-        "vidshort mapaswc"
-        "fotoportada testimon"
-        "aside aside"
         ;
         align-items: center;
         justify-items: center;
         padding-top: 9.5rem;
     }
 
-    .mapaleaflet {
-        height: 100vh;        
-    }
-
-    .videoshort {
+    .main__index__mapaleaflet {
         height: 100vh;
     }
 
-    #main-servicios {
+    .main__index__videoshort {
+        height: 100vh;
+    }
+
+    #main__servicios {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "title title"
             "target target"
             "target target"
@@ -270,7 +156,7 @@
         padding-top: 9.5rem;
     }
 
-    #main-portafolio {
+    #main__portafolio {
         grid-template-rows: auto;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -283,37 +169,40 @@
         padding-top: 9.5rem;
     }
 
-    #main-nosotros {
+    #main__nosotros {
         grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "title title"
-            "article vidlong"
-            "article vidlong2"
-            "subtitle subtitle"
-            "cardGroup cardGroup"
-            "aside aside"
-            ;
+            "title"
+            "article"
+            "subtitle"
+            "cardGroup"
+            "vidlong"
+            "vidlong2"
+            "aside"
+        ;
         align-items: center;
         justify-content: center;
         padding-top: 9.5rem;
     }
 
-    .videolong, .videolong-2 {
+    .main__nosotros__videolong,
+    .main__nosotros__videolong__2 {
         width: 100%;
         height: 21rem;
     }
-            
-    #main-contacto {
+
+    #main__contacto {
         align-items: center;
         justify-content: center;
         padding-top: 9rem;
         grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-        "title title"
-        "formu article"
-        "faq mapa"
+            "title title"
+            "formu formu"
+            "article article"
+            "faq mapa"
         ;
     }
 
@@ -326,32 +215,139 @@
     #footer {
         grid-template-rows: auto;
         row-gap: 1rem;
-        margin: 0 1rem 1rem 0; 
+        margin: 0 1rem 1rem 0;
         grid-template-columns: 2fr 1fr;
-        grid-template-areas: 
-    "logtit navfoot"
-    "rrss rrss"
-    "derechos derechos"
-    ;
+        grid-template-areas:
+            "logtit navfoot"
+            "rrss rrss"
+            "derechos derechos"
+        ;
 
     }
 
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px)
-{
+@media screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
     main {
         background-size: cover;
     }
 
-    #main-index {
+    #main__index {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "main__index__sloganswc main__index__sloganswc"
+            "vidshort mapaswc"
+            "fotoportada testimon"
+            "aside aside"
+        ;
+        align-items: center;
+        justify-items: center;
+        padding-top: 9.5rem;
+    }
+
+    .main__index__mapaleaflet {
+        height: 100vh;
+    }
+
+    .main__index__videoshort {
+        height: 100vh;
+    }
+
+    #main__servicios {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "target target"
+            "target target"
+            "faq faq"
+            "aside aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9.5rem;
+    }
+
+    #main__portafolio {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "contenedorportafolio"
+            "aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9.5rem;
+    }
+
+    #main__nosotros {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "article vidlong"
+            "article vidlong2"
+            "subtitle subtitle"
+            "cardGroup cardGroup"
+            "aside aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9.5rem;
+    }
+
+    .main__nosotros__videolong,
+    .main__nosotros__videolong__2 {
+        width: 100%;
+        height: 21rem;
+    }
+
+    #main__contacto {
+        align-items: center;
+        justify-content: center;
+        padding-top: 9rem;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "formu article"
+            "faq mapa"
+        ;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    #footer {
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        margin: 0 1rem 1rem 0;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "logtit navfoot"
+            "rrss rrss"
+            "derechos derechos"
+        ;
+
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    #main__index {
         grid-template-rows: auto;
         grid-template-columns: 0.5fr 1fr 1fr;
         grid-template-areas:
-        "sloganswc sloganswc mapaswc"
-        "vidshort fotoportada mapaswc"
-        "vidshort testimon mapaswc"
-        "aside aside aside"
+            "main__index__sloganswc main__index__sloganswc mapaswc"
+            "vidshort fotoportada mapaswc"
+            "vidshort testimon mapaswc"
+            "aside aside aside"
 
         ;
         align-items: flex-start;
@@ -359,18 +355,18 @@
         padding-top: 9.5rem;
     }
 
-    .mapaleaflet {
-        height: 100vh;        
-    }
-
-    .videoshort {
+    .main__index__mapaleaflet {
         height: 100vh;
     }
 
-    #main-servicios {
+    .main__index__videoshort {
+        height: 100vh;
+    }
+
+    #main__servicios {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "title title"
             "target target"
             "target target"
@@ -382,7 +378,7 @@
         padding-top: 9.5rem;
     }
 
-    #main-portafolio {
+    #main__portafolio {
         grid-template-rows: auto;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -395,7 +391,7 @@
         padding-top: 9.5rem;
     }
 
-    #main-nosotros {
+    #main__nosotros {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -405,47 +401,141 @@
             "subtitle subtitle"
             "cardGroup cardGroup"
             "aside aside"
-            ;
+        ;
         align-items: center;
         justify-content: center;
         padding-top: 9.5rem;
     }
 
-    .videolong, .videolong-2 {
+    .main__nosotros__videolong,
+    .main__nosotros__videolong__2 {
         width: 100%;
         height: 21rem;
     }
-            
-    #main-contacto {
+
+    #main__contacto {
         align-items: center;
         justify-content: center;
         padding-top: 9rem;
         grid-template-rows: auto;
         grid-template-columns: 2fr 1fr;
         grid-template-areas:
-        "title title"
-        "formu article"
-        "faq mapa"
+            "title title"
+            "formu article"
+            "faq mapa"
         ;
     }
 
-    .mapa {
-        grid-area: mapa;
-        border-radius: 10px;
-        height: 100%;
-    }
-
-    #footer {
-        grid-template-rows: auto;
-        row-gap: 1rem;
-        margin: 0 1rem 1rem 0; 
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas: 
-    "logtit navfoot"
-    "rrss rrss"
-    "derechos derechos"
-    ;
-
-    }
-
 }
+
+@media screen and (min-width: 1600px)
+{ 
+    .tituloHeader {
+        font-size: 3.5rem;
+    }
+    
+    .logoTituloHeader img {
+        width: 10.5rem;
+    }
+
+    .nav-item .nav-link {
+        font-size: 2rem;
+    }
+
+    .asideaccion {
+        top: 13rem;
+    }
+
+    .main__index__slogan {
+        align-content: center;
+
+    }
+
+    #main__index {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "main__index__sloganswc mapaswc vidshort"
+            "fotoportada mapaswc vidshort"
+            "testimon mapaswc aside"
+        ;
+        justify-items: center;
+        align-items: stretch;
+        padding-top: 13rem;
+    }
+
+    .main__index__mapaleaflet {
+        height: 80vh;
+    }
+
+    .main__index__videoshort {
+        height: 80vh;
+        width: 80%;
+    }
+
+    #main__servicios {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "title title title title"
+            "target target target target"
+            "faq faq aside aside"
+            
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 13rem;
+    }
+
+    #main__portafolio {
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "title aside"
+            "contenedorportafolio aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 13rem;
+    }
+
+    #main__nosotros {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 2fr 2fr;
+        grid-template-areas:
+            "title title title title"
+            "article article vidlong vidlong2"
+            "subtitle subtitle subtitle subtitle"
+            "cardGroup cardGroup cardGroup aside"
+        ;
+        align-items: center;
+        justify-content: center;
+        padding-top: 13rem;
+        }
+
+
+    .main__nosotros__videolong,
+    .main__nosotros__videolong__2 {
+        width: 100%;
+        height: 21rem;
+    }
+
+    #main__contacto { 
+        justify-content: center;
+        padding-top: 9rem;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "title title"
+            "formu article"
+            "formu faq"
+            "formu mapa"
+            ;
+    }
+
+    .infosecundaria{
+        text-align: center;
+    }
+}
+
+    

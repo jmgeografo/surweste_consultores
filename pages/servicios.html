@@ -1,259 +1,400 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <!--META TAGS-->
+    <title>Servicios - Soluciones Geográficas a Tu Medida</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Surweste Consultores: Consultoría en servicios geográficos en Chile, especializada en soluciones de webmapping, planificación territorial y medio ambiente. Nuestro equipo de expertos geógrafos ofrece asesorías técnicas para proyectos en sectores urbanos y rurales.">
+    <meta name="description"
+        content="Explora nuestros servicios en webmapping, consultoría ambiental y soluciones de urbanismo para empresas e instituciones.">
+    <meta name="keywords"
+        content="webmapping, consultoría ambiental, urbanismo, soluciones geográficas, servicios técnicos, Chile">
+    <meta name="generator" content="HTML5, CSS3, Bootstrap 5, Font Awesome, AOS">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="José Miguel Rojas, geógrafo, desarrollador web y socio de Surweste Consultores">
+    <meta name="theme-color" content="#006400">
+    <link rel="canonical" href="https://jmgeografo.github.io/surweste_consultores/pages/servicios.html">
 
-    <meta name="keywords" content="consultoría geográfica, webmapping, planificación territorial, servicios ambientales, geógrafos en Chile, proyectos urbanos y rurales, análisis territorial, estudios ambientales, cartografía, servicios de consultoría en Chile">
-    
-    <title>Servicios de Consultoría Geográfica - Surweste Consultores</title>
+    <!--OPEN GRAPHS-->
+    <meta property="og:title" content="Servicios - Soluciones Geográficas a Tu Medida">
+    <meta property="og:description"
+        content="Nuestros servicios en webmapping, urbanismo y consultoría ambiental están diseñados para responder a tus necesidades específicas.">
+    <meta property="og:image" content="https://jmgeografo.github.io/surweste_consultores/images/portadaservicios1.jpg">
+    <meta property="og:url" content="https://jmgeografo.github.io/surweste_consultores/pages/servicios.html">
+    <meta property="og:type" content="article">
 
-    <!--Librería Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <!--Librería Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--LIBRERíAS-->
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!--Librería AOS-->
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!--Estilos locales-->
+    <!--ESTILOS LOCALES-->
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon"
+        alt="Ícono de Surweste Consultores, círculo de fondo blanco con líneas burdeo que representan curvas de nivel topográfica y encima polígonos con redes y nodos geográficos.">
 
-    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+    <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <!--Header-->
+    <!--HEADER-->
     <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-dark w-100">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark w-100" aria-label="Menú de navegación">
             <div class="container-fluid d-flex justify-content-around">
                 <div class="d-flex align-items-center">
+                    <!--Logo+Título-->
                     <section class="logoTituloHeader">
-                        <a href="../index.html"><img src="../images/icons/logo2.png" alt="Logo de Surweste Consultores"></a>
+                        <a href="../index.html"><img src="../images/icons/logo.png" alt="Logo de Surweste Consultores"
+                                longdesc="Logo con forma de círculo, de fondo blanco con líneas burdeo que representan curvas de nivel topográfica y encima polígonos con redes y nodos geográficos."></a>
                         <h1>Surweste Consultores</h1>
                     </section>
-                </div>          
-
-                <button class="navbar-toggler border" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                </div>
+                <!--Menú Hamburguesa-->
+                <button class="navbar-toggler border" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent1">
+                <section class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent1">
                     <ul class="navbar-nav ms-auto">
-                    <li class="nav-item d-flex justify-content-sm-center">
-                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                    </li>
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="../index.html" aria-label="Ir a la página de inicio">INICIO</a>
+                        </li>
 
-                    <li class="nav-item d-flex justify-content-sm-center">
-                        <a class="nav-link active" aria-current="page" href="#">SERVICIOS</a>
-                    </li>
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="#" aria-label="Ver nuestros servicios">SERVICIOS</a>
+                        </li>
 
-                    <li class="nav-item d-flex justify-content-sm-center">
-                        <a class="nav-link active" aria-current="page" href="portafolio.html">PORTAFOLIO</a>
-                    </li>
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="portafolio.html" aria-label="Explorar el portafolio">PORTAFOLIO</a>
+                        </li>
 
-                    <li class="nav-item d-flex justify-content-sm-center">
-                        <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
-                    </li>
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html" aria-label="Conocer más sobre nosotros">NOSOTROS</a>
+                        </li>
 
-                    <li class="nav-item d-flex justify-content-sm-center">
-                        <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
-                    </li>                 
-                </div>
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="contacto.html" aria-label="Página de contacto">CONTACTO</a>
+                        </li>
+                </section>
             </div>
         </nav>
     </header>
 
-    <main id="main-servicios">
-        <div class="titulo"><h2>Servicios de Consultoría Geográfica</h2></div>
-        
-        <div class="container mb-1">
+    <!--MAIN-->
+    <main id="main__servicios">
+
+        <!--Título página-->
+        <h2 class="titulo" aria-labelledby="titulo-servicios">Servicios de Consultoría Geográfica</h2>
+
+        <!--Tarjetas Servicios-->
+        <!--Gestión Territorial-->
+        <section class="container mb-1" aria-label="Tarjeta de servicio Gestión Territorial">
             <div class="card">
                 <div class="card-body">
-                    <img src="../images/icons/gt.png" class="img-fluid mx-auto d-block" alt="...">
+                    <img src="../images/icons/gt.png" class="img-fluid mx-auto d-block"
+                        alt="Ícono de Gestión Territorial"
+                        longdesc="Ícono de Gestión Territorial simbolizado por dos manos que se estrechan de color blanco sobre fondo negro">
+                    <!--Desplegable-->
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><h5 class="card-title text-center">Gestión Territorial</h5>
+                        <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-label="Botón que despliega los servicios englobados por Gestión Territorial">
+                            <h5 class="card-title text-center">Gestión Territorial</h5>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Tramitación de CUO, servidumbres, arrendamientos, cruces ante entidades públicas." class="dropdown-item" href="#" >Gestión permisos territoriales</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Tramitación de CUO (Concesión de Uso Oneroso), servidumbres, arrendamientos, cruces ante entidades públicas."
+                                    class="dropdown-item" href="#">Gestión permisos territoriales</a></li>
 
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Levantamiento de propietarios preliminares (información secundaria SII) y definitivos (búsqueda en CBR)." class="dropdown-item" href="#">Catastro de propietarios</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Levantamiento de propietarios preliminares (información secundaria SII) y definitivos (búsqueda en CBR)."
+                                    class="dropdown-item" href="#">Catastro de propietarios</a></li>
 
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Levantamiento de concesiones de exploración, explotación, faenas existentes y proyectos en tramitación (SEIA)." class="dropdown-item" href="#">Catastro propiedad minera</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Levantamiento de concesiones de exploración, explotación, faenas existentes y proyectos en tramitación (SEIA)."
+                                    class="dropdown-item" href="#">Catastro propiedad minera</a></li>
 
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Identificación y georreferenciación de caminos, líneas existentes, gasoductos, acueductos entre otras obras relevantes para el desarrollo del proyecto." class="dropdown-item" href="#">Levantamiento de cruces</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Identificación y georreferenciación de caminos, líneas existentes, gasoductos, acueductos entre otras obras relevantes para el desarrollo del proyecto."
+                                    class="dropdown-item" href="#">Levantamiento de cruces</a></li>
 
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Aproximación, negociación y cierre de acuerdos voluntarios, en sus distintas figuras contractuales (compraventa, arrendamiento y servidumbre)." class="dropdown-item" href="#">Negociación de acuerdos voluntarios</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Aproximación, negociación y cierre de acuerdos voluntarios, en sus distintas figuras contractuales (compraventa, arrendamiento y servidumbre)."
+                                    class="dropdown-item" href="#">Negociación de acuerdos voluntarios</a></li>
 
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Elaboración de planos, formularios y presentación ante entidades incumbentes (SAG, SII)." class="dropdown-item" href="#">Tramitación de subdivisiones prediales</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Elaboración de planos, formularios y presentación ante entidades incumbentes (SAG, SII)."
+                                    class="dropdown-item" href="#">Tramitación de subdivisiones prediales</a></li>
 
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Estimación de costos asociados a la compraventa, arrendamiento y constitución de servidumbre en predios privados y fiscales." class="dropdown-item" href="#">Tasación de inmuebles</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Estimación de costos asociados a la compraventa, arrendamiento y constitución de servidumbre en predios privados y fiscales."
+                                    class="dropdown-item" href="#">Tasación de inmuebles</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="container mb-1">
+        </section>
+
+        <!--Cartografía/SIG-->
+        <section class="container mb-1" aria-label="Tarjeta de servicio Cartografía/Sistemas de Información Geográfica">
             <div class="card">
                 <div class="card-body">
-                    <img src="../images/icons/cartosig.png" class="img-fluid mx-auto d-block" alt="...">
+                    <img src="../images/icons/cartosig.png" class="img-fluid mx-auto d-block"
+                        alt="Ícono de Cartografía y SIG"
+                        longdesc="Ícono de Cartografía y SIG (Sistemas de Información Geográfica), simbolizado por un mapa con red de coordenadas geográficas y una rosa de los vientos sobre él">
+                    <!--Desplegable-->
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><h5 class="card-title text-center">Cartografía y SIG</h5>
+                        <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-label="Botón que despliega los servicios englobados por Cartografía/SIG">
+                            <h5 class="card-title text-center">Cartografía y SIG</h5>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Elaboración de cartografías personalizadas para proyectos de planificación territorial, estudios ambientales y desarrollo urbano, ya sea para estudios de impacto, zonificación, o infraestructura." class="dropdown-item" href="#">Elaboración de cartografías</a></li>
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Elaboración de planos, en especial de servidumbre, compraventa, arrendamiento, plano general de obras, entre otros." class="dropdown-item" href="#">Elaboración de planimetrías</a></li>
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Simulación de escenarios para analizar variables espaciales y generar datos clave en proyectos ambientales, de infraestructura, y de ordenamiento territorial." class="dropdown-item" href="#">Modelación</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Elaboración de cartografías personalizadas para proyectos de planificación territorial, estudios ambientales y desarrollo urbano, ya sea para estudios de impacto, zonificación, o infraestructura."
+                                    class="dropdown-item" href="#">Elaboración de cartografías</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Elaboración de planos, en especial de servidumbre, compraventa, arrendamiento, plano general de obras, entre otros."
+                                    class="dropdown-item" href="#">Elaboración de planimetrías</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Simulación de escenarios para analizar variables espaciales y generar datos clave en proyectos ambientales, de infraestructura, y de ordenamiento territorial."
+                                    class="dropdown-item" href="#">Modelación</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>    
+        </section>
 
-        <div class="container mb-1">
+        <!--Evaluación Ambiental-->
+        <section class="container mb-1" aria-label="Tarjeta de servicio Evaluación Ambiental">
             <div class="card">
                 <div class="card-body">
-                    <img src="../images/icons/ma.png" class="img-fluid mx-auto d-block" alt="...">
+                    <img src="../images/icons/ea.png" class="img-fluid mx-auto d-block"
+                        alt="Ícono de Evaluación Ambiental"
+                        longdesc="Ícono de Evaluación Ambiental simbolizado por una mano que sostiene un brote vegetal sobre ella">
+                    <!--Desplegable-->
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><h5 class="card-title text-center text-nowrap">Evaluación Ambiental</h5>
+                        <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-label="Botón que despliega los servicios englobados por Evaluación Ambiental">
+                            <h5 class="card-title text-center text-nowrap">Evaluación Ambiental</h5>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Análisis de los riesgos y oportunidades para el desarrollo de un proyecto, vinculado a los elementos sociales y ambientales." class="dropdown-item" href="#">Prefactibilidad socioambiental</a></li>
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Caracterización detallada de los elementos del medio humano de un territorio." class="dropdown-item" href="#">Línea base medio humano</a></li>
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Caracterización detallada de los elementos del medio físico de un territorio." class="dropdown-item" href="#">Línea base medio natural</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Análisis de los riesgos y oportunidades para el desarrollo de un proyecto, vinculado a los elementos sociales y ambientales."
+                                    class="dropdown-item" href="#">Prefactibilidad socioambiental</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Caracterización detallada de los elementos del medio humano de un territorio."
+                                    class="dropdown-item" href="#">Línea base medio humano</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Caracterización detallada de los elementos del medio físico de un territorio."
+                                    class="dropdown-item" href="#">Línea base medio natural</a></li>
                         </ul>
-                    </div>      
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container mb-1">
+        <!--Webmapping-->
+        <section class="container mb-1" aria-label="Tarjeta de servicio Webmapping">
             <div class="card">
                 <div class="card-body">
-                    <img src="../images/icons/wm.png" class="img-fluid mx-auto d-block" alt="...">
+                    <img src="../images/icons/wm.png" class="img-fluid mx-auto d-block" alt="Ícono de Webmapping"
+                        longdesc="Ícono de Webmapping simbolizado por un dispositivo móvil con un mapa web en su pantalla y sobre él un pin de localización">
+                    <!--Desplegable-->
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><h5 class="card-title text-center">Webmapping</h5>
+                        <button class="btn btn-secondary dropdown" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-label="Botón que despliega los servicios englobados por Webmapping">
+                            <h5 class="card-title text-center">Webmapping</h5>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Creación de mapas que permiten explorar datos geoespaciales de forma interactiva, con capas personalizadas, filtros y herramientas de búsqueda para facilitar el análisis y toma de decisiones." class="dropdown-item" href="#">Mapas interactivos personalizados</a></li>
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Implementación de plataformas SIG basadas en la nube que permiten a los clientes acceder y gestionar sus datos geoespaciales desde cualquier lugar. Este servicio facilita la colaboración remota y el acceso seguro a información geográfica actualizada."  class="dropdown-item" href="#">SIG en la nube</a></li>
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Implementación de soluciones de monitoreo en tiempo real utilizando datos satelitales, sensores o drones. Los mapas web permiten a los clientes supervisar cambios en el territorio, detectar emergencias o gestionar recursos naturales de manera eficiente."  class="dropdown-item" href="#">Monitoreo y gestión de territorios en tiempo real</a></li>
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Ofrecimiento de análisis avanzado de datos geoespaciales para identificar patrones, tendencias o anomalías. Los resultados se representan mediante mapas interactivos que simplifican la visualización de información compleja, ayudando a los clientes a tomar decisiones informadas." class="dropdown-item" href="#">Análisis geoespacial y visualización de datos</a></li>
-                            <li><a data-bs-toggle="tooltip" data-bs-placement="right" title="Desarrollo de soluciones que integran diversas fuentes de datos geoespaciales (topográficos, catastrales, climáticos, etc.) en un único entorno de visualización. Esto permite a los usuarios acceder y gestionar datos desde múltiples fuentes dentro de un mismo mapa interactivo." class="dropdown-item" href="#">Integración de bases de datos geoespaciales   </a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Creación de mapas que permiten explorar datos geoespaciales de forma interactiva, con capas personalizadas, filtros y herramientas de búsqueda para facilitar el análisis y toma de decisiones."
+                                    class="dropdown-item" href="#">Mapas interactivos personalizados</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Implementación de plataformas SIG basadas en la nube que permiten a los clientes acceder y gestionar sus datos geoespaciales desde cualquier lugar. Este servicio facilita la colaboración remota y el acceso seguro a información geográfica actualizada."
+                                    class="dropdown-item" href="#">SIG en la nube</a></li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Implementación de soluciones de monitoreo en tiempo real utilizando datos satelitales, sensores o drones. Los mapas web permiten a los clientes supervisar cambios en el territorio, detectar emergencias o gestionar recursos naturales de manera eficiente."
+                                    class="dropdown-item" href="#">Monitoreo y gestión de territorios en tiempo real</a>
+                            </li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Ofrecimiento de análisis avanzado de datos geoespaciales para identificar patrones, tendencias o anomalías. Los resultados se representan mediante mapas interactivos que simplifican la visualización de información compleja, ayudando a los clientes a tomar decisiones informadas."
+                                    class="dropdown-item" href="#">Análisis geoespacial y visualización de datos</a>
+                            </li>
+                            <li><a data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Desarrollo de soluciones que integran diversas fuentes de datos geoespaciales (topográficos, catastrales, climáticos, etc.) en un único entorno de visualización. Esto permite a los usuarios acceder y gestionar datos desde múltiples fuentes dentro de un mismo mapa interactivo."
+                                    class="dropdown-item" href="#">Integración de bases de datos geoespaciales </a></li>
                         </ul>
-                    </div>          
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <aside class="asideaccion service">
+        <!--Botón de acción-->
+        <aside class="asideaccion" aria-label="Ir a la página de contacto para enviarnos un mensaje" >
             <div data-aos="flip-left">
                 <h5>¿Listo para mejorar tus proyectos geográficos?</h5>
-                <article><p>Contáctanos para una consultoría personalizada y comienza a transformar tus ideas en soluciones geográficas efectivas y convenientes.</p></article>
-                <a href="contacto.html" class="btn btn-primary"><h5>¡Contáctanos!</h5></a>
+                <article>
+                    <p>Contáctanos para una consultoría personalizada y comienza a transformar tus ideas en soluciones
+                        geográficas efectivas y convenientes.</p>
+                </article>
+                <a href="contacto.html" class="btn btn-primary">
+                    <h5>¡Contáctanos!</h5>
+                </a>
                 <div class="asideaccion-icons">
-                    <a href="https://wa.me/56992403309/?text=Hola,%20somos%20Surweste%20Consultores.%20Cuéntanos%20qué%20necesitas%20para%20contactar%20nuestros%20profesionales"><i class="fa-brands fa-whatsapp fa-xl hover"></i></a>
-                    <a href="mailto:contacto@surwesteconsultores.cl"><i class="fa-regular fa-envelope fa-xl"></i></a>
+                    <a
+                        href="https://wa.me/56992403309/?text=Hola,%20somos%20Surweste%20Consultores.%20Cuéntanos%20qué%20necesitas%20para%20contactar%20nuestros%20profesionales"><i
+                            class="fa-brands fa-whatsapp fa-xl hover"></i></a>
+                    <a href="mailto:contacto@surwesteconsultores.cl"><i class="fa-regular fa-envelope fa-xl" aria-label="Contacto por Correo"></i></a>
                 </div>
-            </div>    
+            </div>
         </aside>
 
-        <section class="preguntasfrecuentes">
+        <!--Preguntas Frecuentes-->
+        <article class="infosecundaria">
             <h4>Preguntas Frecuentes:</h3>
                 <h6>¿Qué implica la gestión de permisos territoriales?</h6>
-                    <p>La gestión de permisos territoriales abarca la tramitación de Certificados de Uso de Suelo (CUO), servidumbres, arrendamientos y cruces ante diversas entidades públicas. Este servicio asegura que los proyectos cumplan con las normativas locales y nacionales.</p>
+                <p>La gestión de permisos territoriales abarca la tramitación de Certificados de Uso de Suelo (CUO),
+                    servidumbres, arrendamientos y cruces ante diversas entidades públicas. Este servicio asegura que
+                    los proyectos cumplan con las normativas locales y nacionales.</p>
                 <h6>¿Cómo se realiza el catastro de propietarios?</h6>
-                    <p>El catastro de propietarios incluye un levantamiento preliminar de datos a través del Servicio de Impuestos Internos (SII) y una búsqueda definitiva en el Conservador de Bienes Raíces (CBR). Esto permite identificar a los propietarios de terrenos específicos para cualquier proyecto.</p>
+                <p>El catastro de propietarios incluye un levantamiento preliminar de datos a través del Servicio de
+                    Impuestos Internos (SII) y una búsqueda definitiva en el Conservador de Bienes Raíces (CBR). Esto
+                    permite identificar a los propietarios de terrenos específicos para cualquier proyecto.</p>
                 <h6>¿Qué es el catastro de propiedad minera?</h6>
-                    <p>Este servicio identifica concesiones de exploración, explotación, faenas activas y proyectos mineros en tramitación, utilizando información del Sistema de Evaluación de Impacto Ambiental (SEIA).</p>
+                <p>Este servicio identifica concesiones de exploración, explotación, faenas activas y proyectos mineros
+                    en tramitación, utilizando información del Sistema de Evaluación de Impacto Ambiental (SEIA).</p>
                 <h6>¿Cuál es el propósito del levantamiento de cruces?</h6>
-                    <p>El levantamiento de cruces consiste en identificar y georreferenciar caminos, líneas de transmisión, gasoductos, acueductos y otras infraestructuras clave para proyectos, asegurando que se tenga en cuenta la infraestructura existente en la planificación.</p>
+                <p>El levantamiento de cruces consiste en identificar y georreferenciar caminos, líneas de transmisión,
+                    gasoductos, acueductos y otras infraestructuras clave para proyectos, asegurando que se tenga en
+                    cuenta la infraestructura existente en la planificación.</p>
                 <h6>¿En qué consiste la negociación de acuerdos voluntarios?</h6>
-                    <p>La negociación de acuerdos voluntarios implica la aproximación, negociación y cierre de acuerdos en diversas modalidades contractuales (como compraventa, arrendamiento o servidumbre) de acuerdo con los intereses del proyecto.</p>
+                <p>La negociación de acuerdos voluntarios implica la aproximación, negociación y cierre de acuerdos en
+                    diversas modalidades contractuales (como compraventa, arrendamiento o servidumbre) de acuerdo con
+                    los intereses del proyecto.</p>
                 <h6>¿Qué incluye la tramitación de subdivisiones prediales?</h6>
-                    <p>Este servicio abarca la creación de planos, formularios y la presentación ante el Servicio Agrícola y Ganadero (SAG) y el Servicio de Impuestos Internos (SII) para la subdivisión oficial de predios.</p>
+                <p>Este servicio abarca la creación de planos, formularios y la presentación ante el Servicio Agrícola y
+                    Ganadero (SAG) y el Servicio de Impuestos Internos (SII) para la subdivisión oficial de predios.</p>
                 <h6>¿Para qué sirve la tasación de inmuebles?</h6>
-                    <p>La tasación permite estimar los costos de compraventa, arrendamiento o constitución de servidumbre de propiedades, ya sean privadas o fiscales, para tomar decisiones informadas sobre inversiones en terrenos.</p>
+                <p>La tasación permite estimar los costos de compraventa, arrendamiento o constitución de servidumbre de
+                    propiedades, ya sean privadas o fiscales, para tomar decisiones informadas sobre inversiones en
+                    terrenos.</p>
                 <h6>¿Qué tipo de cartografías elaboran?</h6>
-                    <p>Creamos cartografías personalizadas para estudios de impacto ambiental, planificación urbana y proyectos de infraestructura, adaptadas a las necesidades específicas del cliente.</p>
+                <p>Creamos cartografías personalizadas para estudios de impacto ambiental, planificación urbana y
+                    proyectos de infraestructura, adaptadas a las necesidades específicas del cliente.</p>
                 <h6>¿Qué es una planimetría?</h6>
-                    <p>La planimetría incluye la creación de planos específicos como los de servidumbre, compraventa, arrendamiento y planos generales de obras, esenciales para la planificación de proyectos.</p>
+                <p>La planimetría incluye la creación de planos específicos como los de servidumbre, compraventa,
+                    arrendamiento y planos generales de obras, esenciales para la planificación de proyectos.</p>
                 <h6>¿Qué beneficios ofrece el webmapping en la nube?</h6>
-                    <p>Nuestro servicio de SIG en la nube permite a los clientes acceder y gestionar datos geoespaciales de manera remota y segura, mejorando la colaboración y el acceso a información actualizada.</p>
+                <p>Nuestro servicio de SIG en la nube permite a los clientes acceder y gestionar datos geoespaciales de
+                    manera remota y segura, mejorando la colaboración y el acceso a información actualizada.</p>
                 <h6>¿Cómo se realiza el monitoreo en tiempo real?</h6>
-                    <p>Utilizamos datos de satélites, sensores o drones para monitorear cambios en el territorio en tiempo real, lo que permite la detección de emergencias y una gestión eficiente de los recursos.</p>
+                <p>Utilizamos datos de satélites, sensores o drones para monitorear cambios en el territorio en tiempo
+                    real, lo que permite la detección de emergencias y una gestión eficiente de los recursos.</p>
                 <h6>¿Puedo integrar diferentes fuentes de datos en un solo mapa?</h6>
-                    <p>Sí, desarrollamos soluciones que integran datos topográficos, catastrales, climáticos y otros en un entorno de visualización único, facilitando el acceso y manejo de información desde múltiples fuentes.</p>
+                <p>Sí, desarrollamos soluciones que integran datos topográficos, catastrales, climáticos y otros en un
+                    entorno de visualización único, facilitando el acceso y manejo de información desde múltiples
+                    fuentes.</p>
                 <h6>¿Qué ventajas ofrece el análisis geoespacial avanzado?</h6>
-                    <p>El análisis geoespacial avanzado permite identificar patrones, tendencias y anomalías mediante mapas interactivos, lo cual simplifica la toma de decisiones basadas en datos precisos.</p>
-        </section>
-    </main>     
+                <p>El análisis geoespacial avanzado permite identificar patrones, tendencias y anomalías mediante mapas
+                    interactivos, lo cual simplifica la toma de decisiones basadas en datos precisos.</p>
+        </article>
+    </main>
 
+    <!--FOOTER-->
     <footer id="footer">
+        <!--Logo+título-->
         <section class="logoTituloFooter">
-            <a href="../index.html"><img src="../images/icons/logo2.png" alt="Logo de Surweste Consultores"></a>
+            <a href="../index.html"><img src="../images/icons/logo.png" alt="Logo de Surweste Consultores"
+                    longdesc="Logo con forma de círculo, de fondo blanco con líneas burdeo que representan curvas de nivel topográfica y encima polígonos con redes y nodos geográficos."></a>
             <h4 class="tituloFooter">Surweste Consultores</h4>
         </section>
 
+        <!--Navbar-->
         <section class="navBarFooter">
-            <nav class="navbar navbar-expand-lg navbar-dark w-100">
-                <button class="navbar-toggler mx-auto border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark w-100" aria-label="Menú de navegación">
+                <button class="navbar-toggler mx-auto border" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item d-flex justify-content-sm-center">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="../index.html" aria-label="Ir a la página de inicio">Inicio</a>
+                        </li>
 
-                            <li class="nav-item d-flex justify-content-sm-center">
-                                <a class="nav-link active" aria-current="page" href="#">Servicios</a>
-                            </li>
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="#" aria-label="Ver nuestros servicios">Servicios</a>
+                        </li>
 
-                            <li class="nav-item d-flex justify-content-sm-center">
-                                <a class="nav-link active" aria-current="page" href="portafolio.html">Portafolio</a>
-                            </li>
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="portafolio.html" aria-label="Explorar el portafolio">Portafolio</a>
+                        </li>
 
-                            <li class="nav-item d-flex justify-content-sm-center">
-                                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                            </li>
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html" aria-label="Conocer más sobre nosotros">Nosotros</a>
+                        </li>
 
-                            <li class="nav-item d-flex justify-content-sm-center">
-                                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                            </li>                 
+                        <li class="nav-item d-flex justify-content-sm-center">
+                            <a class="nav-link active" aria-current="page" href="contacto.html" aria-label="Página de contacto">Contacto</a>
+                        </li>
                 </div>
             </nav>
         </section>
 
+        <!--Copyright-->
         <section class="derechosFooter">
-            <p>© Todos los derechos reservados. Creado por José Miguel Rojas.<br>Dirección: San Antonio 510, Santiago, Chile.
+            <p>© Todos los derechos reservados. Creado por José Miguel Rojas.<br>Dirección: San Antonio 510, Santiago,
+                Chile.
             </p>
         </section>
-               
+
+        <!--Redes Sociales-->
         <section class="rrssFooter">
-            <a href="https://wa.me/56992403309/?text=Hola,%20somos%20Surweste%20Consultores.%20Cuéntanos%20qué%20necesitas%20para%20contactar%20nuestros%20profesionales"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
-            <a href="https://www.linkedin.com/in/surweste-consultores-278285330/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-            <a href="https://www.facebook.com/surwesteconsultores/"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
-            <a href="https://www.instagram.com/surwesteconsultores/"><i class="fa-brands fa-instagram fa-xl"></i></a>
-            <a href="mailto:contacto@surwesteconsultores.cl"><i class="fa-regular fa-envelope fa-xl"></i></a>  
-        </section>          
+            <a href="https://wa.me/56992403309/?text=Hola,%20somos%20Surweste%20Consultores.%20Cuéntanos%20qué%20necesitas%20para%20armar%20tu%20presupuesto"
+                alt="Enlace a conversación de Whatsap"
+                longdesc="Hola, somos Surweste Consultores. Cuéntanos qué necesitas para armar tu presupuesto"><i
+                    class="fa-brands fa-whatsapp fa-xl" aria-label="Contacto por Whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/surweste-consultores-278285330/" alt="Enlace a Linkedin"><i
+                    class="fa-brands fa-linkedin fa-xl" aria-label="Contacto por Linkedin"></i></a>
+            <a href="https://www.facebook.com/surwesteconsultores/" alt="Enlace a Facebook"><i
+                    class="fa-brands fa-facebook-f fa-xl" aria-label="Contacto por Facebook"></i></a>
+            <a href="https://www.instagram.com/surwesteconsultores/" alt="Enlace a Instagram"><i
+                    class="fa-brands fa-instagram fa-xl" aria-label="Contacto por Instagram"></i></a>
+            <a href="mailto:contacto@surwesteconsultores.cl"><i class="fa-regular fa-envelope fa-xl" aria-label="Contacto por Correo"></i></a>
+        </section>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--SCRIPTS-->
+    <!--Bootstrap 5-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
+    <!--Tooltip de Bootstrap-->
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-            new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    });
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        });
     </script>
 
+    <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>AOS.init();</script>
 </body>

@@ -42,7 +42,7 @@ h6 { font-size: $fuente-tamaño-base;};
 
 @font-face {
     font-family: "Lato";
-    src: url(../css/fonts/Lato/Lato-Regular.ttf);
+    src: url(../css/fonts/lato/Lato-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -88,7 +88,7 @@ a {
     grid-area: subtitle; 
 }
 
-.articulo {
+.infoprincipal {
     grid-area: article; 
     color: $color-primario;
     background-color: #424242CC ; 
@@ -134,7 +134,7 @@ a {
     text-align: justify;
 }
 
-#main-servicios .card img {
+#main__servicios .card img {
     width: 10rem;
 }
 
@@ -143,7 +143,7 @@ a {
     margin-bottom: 1rem;
 }
 
-.card .btn-primary, .asideaccion .btn-primary, #form .btn-primary, .btn-secondary, .accordion, .accordion-item, .accordion-header, .accordion-body, .accordion-collapse, .accordion-button, .accordion-button:not(.collapsed), .accordion-btn-icon { 
+.card .btn-primary, .asideaccion .btn-primary, #form .btn-primary, .btn-secondary, .accordion, .accordion-item, .accordion-header, .accordion-body, .accordion-collapse, .accordion-button, .accordion-button:not(.collapsed), .accordion-btn-icon, .subtitulo a{ 
     background-color: #D84315;
     border: none;
     color: $color-primario;
@@ -154,7 +154,7 @@ a {
     box-shadow: none;
 }
 
-.card .btn-primary:hover, .asideaccion .btn-primary:hover, #form .btn-primary:hover, .btn-secondary:hover, .accordion-button:hover, .accordion-btn-icon:hover {
+.card .btn-primary:hover, .asideaccion .btn-primary:hover, #form .btn-primary:hover, .btn-secondary:hover, .accordion-button:hover, .accordion-btn-icon:hover, .subtitulo a:hover {
     background-color:$color-primario;
     color: #3E2723;
     transform: scale(1.2);

@@ -1,13 +1,13 @@
-.videolong, .videolong-2 {
+.main__nosotros__videolong, .main__nosotros__videolong__2 {
     height: 100%;
     border-radius: 1rem;
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.5);
 }
 
-.videolong {
+.main__nosotros__videolong {
     grid-area: vidlong;
 }
 
-.videolong-2 {
+.main__nosotros__videolong__2 {
     grid-area: vidlong2;
 }

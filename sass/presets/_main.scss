@@ -13,24 +13,23 @@ main {
 }
 
 /*Contenedores*/
-#main-index {
+#main__index {
     grid-template-rows: auto;
     grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr;
     grid-template-areas:
-        "sloganswc sloganswc mapaswc aside"
+        "main__index__sloganswc main__index__sloganswc mapaswc aside"
         "vidshort fotoportada mapaswc aside"
         "vidshort testimon mapaswc aside"
     ;
     align-items: start;
     gap: 2rem;
-    max-width: 1500px;
     margin: 0 auto;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
-#main-servicios {
+#main__servicios {
     align-items: start;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -40,14 +39,13 @@ main {
         "faq faq aside aside"
         ;
     gap: 2rem;
-    max-width: 1500px;
     margin: 0 auto;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;   
 }
 
-#main-portafolio {
+#main__portafolio {
     align-items: start;
     grid-template-rows: auto;
     grid-template-columns: 4fr 1fr;
@@ -56,14 +54,13 @@ main {
         "contenedorportafolio aside"
         ;
     gap: 2rem;
-    max-width: 1500px;
     margin: 0 auto;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;      
 }
 
-#main-nosotros {
+#main__nosotros {
     align-items: start;
     grid-template-rows: auto;
     grid-template-columns: 2fr 1.5fr 1fr;
@@ -74,14 +71,13 @@ main {
         "subtitle subtitle aside"
         "cardGroup cardGroup aside";
     gap: 2rem;
-    max-width: 1500px;
     margin: 0 auto;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;    
 }
 
-#main-contacto {
+#main__contacto {
     align-items: start;
     grid-template-rows: auto;
     grid-template-columns: 3fr 5fr 3fr;
@@ -90,9 +86,15 @@ main {
         "article article formu"
         "mapa faq formu";
     gap: 1.5rem;
-    max-width: 1500px;
     margin: 0 auto;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;   
     }
+
+#main__404 {
+    display: grid;
+    grid-template-areas:
+    "title"
+    "subtitle"
+}

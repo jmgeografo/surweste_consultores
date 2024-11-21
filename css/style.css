@@ -5,16 +5,13 @@
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
-  max-width: 1500px;
 }
 
 /*Encabezado*/
 #header {
   display: flex;
-  justify-content: space-around;
   background: linear-gradient(135deg, rgba(142, 141, 64, 0.9490196078) 30%, rgba(107, 112, 92, 0.9490196078) 50%, rgba(61, 90, 128, 0.9490196078) 80%);
   width: 100%;
-  max-width: 1500px;
   position: fixed;
   z-index: 10;
 }
@@ -62,69 +59,69 @@ main {
 }
 
 /*Contenedores*/
-#main-index {
+#main__index {
   grid-template-rows: auto;
   grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr;
-  grid-template-areas: "sloganswc sloganswc mapaswc aside" "vidshort fotoportada mapaswc aside" "vidshort testimon mapaswc aside";
+  grid-template-areas: "main__index__sloganswc main__index__sloganswc mapaswc aside" "vidshort fotoportada mapaswc aside" "vidshort testimon mapaswc aside";
   align-items: start;
   gap: 2rem;
-  max-width: 1500px;
   margin: 0 auto;
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-#main-servicios {
+#main__servicios {
   align-items: start;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "title title title title" "target target target target" "faq faq aside aside";
   gap: 2rem;
-  max-width: 1500px;
   margin: 0 auto;
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-#main-portafolio {
+#main__portafolio {
   align-items: start;
   grid-template-rows: auto;
   grid-template-columns: 4fr 1fr;
   grid-template-areas: "title aside" "contenedorportafolio aside";
   gap: 2rem;
-  max-width: 1500px;
   margin: 0 auto;
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-#main-nosotros {
+#main__nosotros {
   align-items: start;
   grid-template-rows: auto;
   grid-template-columns: 2fr 1.5fr 1fr;
   grid-template-areas: "title title aside" "article vidlong aside" "article vidlong2 aside" "subtitle subtitle aside" "cardGroup cardGroup aside";
   gap: 2rem;
-  max-width: 1500px;
   margin: 0 auto;
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-#main-contacto {
+#main__contacto {
   align-items: start;
   grid-template-rows: auto;
   grid-template-columns: 3fr 5fr 3fr;
   grid-template-areas: "title title title" "article article formu" "mapa faq formu";
   gap: 1.5rem;
-  max-width: 1500px;
   margin: 0 auto;
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+#main__404 {
+  display: grid;
+  grid-template-areas: "title" "subtitle";
 }
 
 /*Pie de página*/
@@ -213,13 +210,13 @@ main {
   font-size: 1.5em;
 }
 
-#main-servicios .asideaccion {
+#main__servicios .asideaccion {
   z-index: 0;
   margin-bottom: 1rem;
 }
 
-.slogan {
-  grid-area: sloganswc;
+.main__index__slogan {
+  grid-area: main__index__sloganswc;
   color: #FAF3E0;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -229,12 +226,12 @@ main {
   border-radius: 10px;
 }
 
-.serviciosportada {
+.main__index__serviciosportada {
   grid-area: fotoportada;
 }
-
-.serviciosportada img {
+.main__index__serviciosportada img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .testimonial-card {
@@ -262,19 +259,19 @@ main {
   color: darkslategray;
 }
 
-.mapaleaflet {
+.main__index__mapaleaflet {
   grid-area: mapaswc;
   width: 100%;
   height: 100%;
 }
 
-.videoshort {
+.main__index__videoshort {
   grid-area: vidshort;
   border-radius: 1rem;
   height: 100%;
 }
 
-.preguntasfrecuentes {
+.infosecundaria {
   grid-area: faq;
   background-color: rgba(61, 90, 128, 0.9490196078);
   text-align: justify;
@@ -287,7 +284,7 @@ main {
   border-radius: 1rem;
 }
 
-.preguntasfrecuentes h4 {
+.infosecundaria h4 {
   text-align: center;
   font-size: 1.6rem;
   padding-bottom: 0.5rem;
@@ -295,7 +292,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.preguntasfrecuentes h6 {
+.infosecundaria h6 {
   font-size: 1.1rem;
   color: #FAF3E0;
   margin-top: 1rem;
@@ -304,25 +301,25 @@ main {
   transition: color 0.3s ease;
 }
 
-.preguntasfrecuentes h6:hover {
+.infosecundaria h6:hover {
   color: #D84315;
 }
 
-.preguntasfrecuentes p {
+.infosecundaria p {
   margin-bottom: 1.2rem;
 }
 
-.videolong, .videolong-2 {
+.main__nosotros__videolong, .main__nosotros__videolong__2 {
   height: 100%;
   border-radius: 1rem;
   box-shadow: 0 14px 18px rgba(0, 0, 0, 0.5);
 }
 
-.videolong {
+.main__nosotros__videolong {
   grid-area: vidlong;
 }
 
-.videolong-2 {
+.main__nosotros__videolong__2 {
   grid-area: vidlong2;
 }
 
@@ -360,10 +357,10 @@ main {
   main {
     background-size: contain;
   }
-  #main-index {
+  #main__index {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "sloganswc" "fotoportada" "vidshort" "mapaswc" "testimon" "aside";
+    grid-template-areas: "main__index__sloganswc" "fotoportada" "vidshort" "mapaswc" "testimon" "aside";
     align-items: center;
     justify-items: center;
     padding-top: 10.5rem;
@@ -371,13 +368,13 @@ main {
   .nav-item {
     justify-content: center;
   }
-  .mapaleaflet {
+  .main__index__mapaleaflet {
     height: 100vh;
   }
-  .videoshort {
+  .main__index__videoshort {
     height: 100vh;
   }
-  #main-servicios {
+  #main__servicios {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "title" "target" "target" "target" "target" "faq" "aside";
@@ -385,7 +382,7 @@ main {
     justify-content: center;
     padding-top: 10.5rem;
   }
-  #main-portafolio {
+  #main__portafolio {
     grid-template-rows: auto;
     grid-template-columns: 350px;
     grid-template-areas: "title" "contenedorportafolio" "aside";
@@ -393,7 +390,7 @@ main {
     justify-content: center;
     padding-top: 10.5rem;
   }
-  #main-nosotros {
+  #main__nosotros {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "title" "article" "subtitle" "cardGroup" "vidlong" "vidlong2" "aside";
@@ -401,10 +398,11 @@ main {
     justify-content: center;
     padding-top: 10.5rem;
   }
-  .videolong, .videolong-2 {
+  .main__nosotros__videolong,
+  .main__nosotros__videolong__2 {
     width: 100%;
   }
-  #main-contacto {
+  #main__contacto {
     align-items: center;
     justify-content: center;
     padding-top: 10rem;
@@ -424,21 +422,21 @@ main {
   main {
     background-size: contain;
   }
-  #main-index {
+  #main__index {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "sloganswc" "fotoportada" "vidshort" "mapaswc" "testimon" "aside";
+    grid-template-areas: "main__index__sloganswc" "fotoportada" "vidshort" "mapaswc" "testimon" "aside";
     align-items: center;
     justify-items: center;
     padding-top: 9.5rem;
   }
-  .mapaleaflet {
+  .main__index__mapaleaflet {
     height: 100vh;
   }
-  .videoshort {
+  .main__index__videoshort {
     height: 100vh;
   }
-  #main-servicios {
+  #main__servicios {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title title" "target target" "target target" "faq faq" "aside aside";
@@ -446,7 +444,7 @@ main {
     justify-content: center;
     padding-top: 9.5rem;
   }
-  #main-portafolio {
+  #main__portafolio {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "title" "contenedorportafolio" "aside";
@@ -454,7 +452,7 @@ main {
     justify-content: center;
     padding-top: 9.5rem;
   }
-  #main-nosotros {
+  #main__nosotros {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "title" "article" "subtitle" "cardGroup" "vidlong" "vidlong2" "aside";
@@ -462,11 +460,12 @@ main {
     justify-content: center;
     padding-top: 9.5rem;
   }
-  .videolong, .videolong-2 {
+  .main__nosotros__videolong,
+  .main__nosotros__videolong__2 {
     width: 100%;
     height: 21rem;
   }
-  #main-contacto {
+  #main__contacto {
     align-items: center;
     justify-content: center;
     padding-top: 9rem;
@@ -491,21 +490,21 @@ main {
   main {
     background-size: cover;
   }
-  #main-index {
+  #main__index {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "sloganswc sloganswc" "vidshort mapaswc" "fotoportada testimon" "aside aside";
+    grid-template-areas: "main__index__sloganswc main__index__sloganswc" "vidshort mapaswc" "fotoportada testimon" "aside aside";
     align-items: center;
     justify-items: center;
     padding-top: 9.5rem;
   }
-  .mapaleaflet {
+  .main__index__mapaleaflet {
     height: 100vh;
   }
-  .videoshort {
+  .main__index__videoshort {
     height: 100vh;
   }
-  #main-servicios {
+  #main__servicios {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title title" "target target" "target target" "faq faq" "aside aside";
@@ -513,7 +512,7 @@ main {
     justify-content: center;
     padding-top: 9.5rem;
   }
-  #main-portafolio {
+  #main__portafolio {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "title" "contenedorportafolio" "aside";
@@ -521,7 +520,7 @@ main {
     justify-content: center;
     padding-top: 9.5rem;
   }
-  #main-nosotros {
+  #main__nosotros {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title title" "article vidlong" "article vidlong2" "subtitle subtitle" "cardGroup cardGroup" "aside aside";
@@ -529,11 +528,12 @@ main {
     justify-content: center;
     padding-top: 9.5rem;
   }
-  .videolong, .videolong-2 {
+  .main__nosotros__videolong,
+  .main__nosotros__videolong__2 {
     width: 100%;
     height: 21rem;
   }
-  #main-contacto {
+  #main__contacto {
     align-items: center;
     justify-content: center;
     padding-top: 9rem;
@@ -555,24 +555,21 @@ main {
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  main {
-    background-size: cover;
-  }
-  #main-index {
+  #main__index {
     grid-template-rows: auto;
     grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-areas: "sloganswc sloganswc mapaswc" "vidshort fotoportada mapaswc" "vidshort testimon mapaswc" "aside aside aside";
+    grid-template-areas: "main__index__sloganswc main__index__sloganswc mapaswc" "vidshort fotoportada mapaswc" "vidshort testimon mapaswc" "aside aside aside";
     align-items: flex-start;
     justify-items: center;
     padding-top: 9.5rem;
   }
-  .mapaleaflet {
+  .main__index__mapaleaflet {
     height: 100vh;
   }
-  .videoshort {
+  .main__index__videoshort {
     height: 100vh;
   }
-  #main-servicios {
+  #main__servicios {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title title" "target target" "target target" "faq faq" "aside aside";
@@ -580,7 +577,7 @@ main {
     justify-content: center;
     padding-top: 9.5rem;
   }
-  #main-portafolio {
+  #main__portafolio {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "title" "contenedorportafolio" "aside";
@@ -588,7 +585,7 @@ main {
     justify-content: center;
     padding-top: 9.5rem;
   }
-  #main-nosotros {
+  #main__nosotros {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title title" "article vidlong" "article vidlong2" "subtitle subtitle" "cardGroup cardGroup" "aside aside";
@@ -596,11 +593,12 @@ main {
     justify-content: center;
     padding-top: 9.5rem;
   }
-  .videolong, .videolong-2 {
+  .main__nosotros__videolong,
+  .main__nosotros__videolong__2 {
     width: 100%;
     height: 21rem;
   }
-  #main-contacto {
+  #main__contacto {
     align-items: center;
     justify-content: center;
     padding-top: 9rem;
@@ -608,17 +606,76 @@ main {
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "title title" "formu article" "faq mapa";
   }
-  .mapa {
-    grid-area: mapa;
-    border-radius: 10px;
-    height: 100%;
+}
+@media screen and (min-width: 1600px) {
+  .tituloHeader {
+    font-size: 3.5rem;
   }
-  #footer {
+  .logoTituloHeader img {
+    width: 10.5rem;
+  }
+  .nav-item .nav-link {
+    font-size: 2rem;
+  }
+  .asideaccion {
+    top: 13rem;
+  }
+  .main__index__slogan {
+    align-content: center;
+  }
+  #main__index {
     grid-template-rows: auto;
-    row-gap: 1rem;
-    margin: 0 1rem 1rem 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "main__index__sloganswc mapaswc vidshort" "fotoportada mapaswc vidshort" "testimon mapaswc aside";
+    justify-items: center;
+    align-items: stretch;
+    padding-top: 13rem;
+  }
+  .main__index__mapaleaflet {
+    height: 80vh;
+  }
+  .main__index__videoshort {
+    height: 80vh;
+    width: 80%;
+  }
+  #main__servicios {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "title title title title" "target target target target" "faq faq aside aside";
+    align-items: center;
+    justify-content: center;
+    padding-top: 13rem;
+  }
+  #main__portafolio {
+    grid-template-rows: auto;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "logtit navfoot" "rrss rrss" "derechos derechos";
+    grid-template-areas: "title aside" "contenedorportafolio aside";
+    align-items: center;
+    justify-content: center;
+    padding-top: 13rem;
+  }
+  #main__nosotros {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-areas: "title title title title" "article article vidlong vidlong2" "subtitle subtitle subtitle subtitle" "cardGroup cardGroup cardGroup aside";
+    align-items: center;
+    justify-content: center;
+    padding-top: 13rem;
+  }
+  .main__nosotros__videolong,
+  .main__nosotros__videolong__2 {
+    width: 100%;
+    height: 21rem;
+  }
+  #main__contacto {
+    justify-content: center;
+    padding-top: 9rem;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "title title" "formu article" "formu faq" "formu mapa";
+  }
+  .infosecundaria {
+    text-align: center;
   }
 }
 h1 {
@@ -660,7 +717,7 @@ h6 {
 }
 @font-face {
   font-family: "Lato";
-  src: url(../css/fonts/Lato/Lato-Regular.ttf);
+  src: url(../css/fonts/lato/Lato-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -702,7 +759,7 @@ a {
   grid-area: subtitle;
 }
 
-.articulo {
+.infoprincipal {
   grid-area: article;
   color: #FAF3E0;
   background-color: rgba(66, 66, 66, 0.8);
@@ -714,7 +771,7 @@ a {
   border-radius: 1rem;
   font-family: "Lato";
 }
-.articulo h2 {
+.infoprincipal h2 {
   text-align: center;
 }
 
@@ -746,7 +803,7 @@ a {
   text-align: justify;
 }
 
-#main-servicios .card img {
+#main__servicios .card img {
   width: 10rem;
 }
 
@@ -755,7 +812,7 @@ a {
   margin-bottom: 1rem;
 }
 
-.card .btn-primary, .asideaccion .btn-primary, #form .btn-primary, .btn-secondary, .accordion, .accordion-item, .accordion-header, .accordion-body, .accordion-collapse, .accordion-button, .accordion-button:not(.collapsed), .accordion-btn-icon {
+.card .btn-primary, .asideaccion .btn-primary, #form .btn-primary, .btn-secondary, .accordion, .accordion-item, .accordion-header, .accordion-body, .accordion-collapse, .accordion-button, .accordion-button:not(.collapsed), .accordion-btn-icon, .subtitulo a {
   background-color: #D84315;
   border: none;
   color: #FAF3E0;
@@ -766,7 +823,7 @@ a {
   box-shadow: none;
 }
 
-.card .btn-primary:hover, .asideaccion .btn-primary:hover, #form .btn-primary:hover, .btn-secondary:hover, .accordion-button:hover, .accordion-btn-icon:hover {
+.card .btn-primary:hover, .asideaccion .btn-primary:hover, #form .btn-primary:hover, .btn-secondary:hover, .accordion-button:hover, .accordion-btn-icon:hover, .subtitulo a:hover {
   background-color: #FAF3E0;
   color: #3E2723;
   transform: scale(1.2);
