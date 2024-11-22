@@ -1,32 +1,24 @@
-/*Aside*/
-
 .asideaccion {
     grid-area: aside;
-    align-self: start; 
+    align-self: start;
     position: sticky;
     top: 8rem;
     width: 100%;
     padding: 1.5rem;
-    background-color: #225038e6;
-    background: linear-gradient(135deg, #1f4b32e6 20%, #2a7a50e6 50%, #5abf8ae6 80%); 
-    color: #FAF3E0;
-    border-radius: 1rem;
+    background: linear-gradient(135deg, #1f4b32e6 20%, #2a7a50e6 50%, #5abf8ae6 80%);
+    color: $color-primario;
+    border-radius: $border-radius;
     text-align: center;
     z-index: 1000;
     margin-top: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+    box-shadow: $box-shadow;
 
-.asideaccion-icons {
-    margin-top: 0.9rem;
-}
+    & .icons {
+        margin-top: 0.9rem;
+    }
 
-.asideaccion-icons a {
-    margin: 0 8px;
-    font-size: 1.5em;
-}
-
-#main__servicios .asideaccion {
-    z-index: 0;
-    margin-bottom: 1rem;
+    & .icons a {
+        margin: 0 8px;
+        font-size: 1.5em;
+    }
 }

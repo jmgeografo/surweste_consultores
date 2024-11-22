@@ -1,8 +1,90 @@
-*{
+/*Variables*/
+$color-primario: #FAF3E0;
+$color-secundario: #3E2723;
+$color-terciario: #225038e6;
+$color-cuaternario: #D84315;
+$color-quinario: #3D5A80F2;
+$color-senario: #424242D9;
+$fuente-tamaño-base: 1rem;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+$border-radius: 1rem;
+
+/*Viewport*/
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    
+}
+
+/*Tipografías*/
+h1 {
+    font-size: $fuente-tamaño-base*2.5;
+    font-family: "GoodBrush";
+}
+
+;
+
+h2 {
+    font-size: $fuente-tamaño-base*2;
+}
+
+;
+
+h3 {
+    font-size: $fuente-tamaño-base*1.75;
+}
+
+;
+
+h4 {
+    font-size: $fuente-tamaño-base*1.5;
+}
+
+;
+
+h5 {
+    font-size: $fuente-tamaño-base*1.25;
+}
+
+;
+
+h6 {
+    font-size: $fuente-tamaño-base;
+}
+
+;
+
+@font-face {
+    font-family: "GoboldRegular";
+    src: url(../css/fonts/gobold/GoboldRegular.otf);
+}
+
+@font-face {
+    font-family: "GoodBrush";
+    src: url(../css/fonts/good_brush/GoodBrush.otf);
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../css/fonts/Lato/Lato-Regular.ttf);
+}
+
+/*Fuentes escogidas*/
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "GoboldRegular";
+}
+
+p {
+    font-family: "Lato";
+}
+
+/*Enlaces*/
+a {
+    color: $color-primario;
 }

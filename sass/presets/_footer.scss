@@ -1,61 +1,48 @@
-/*Pie de página*/
-#footer{
+#footer {
     display: grid;
+    @include grid-layout (auto, 1fr 2fr 1fr, "logtit navfoot rrss" "logtit derechos rrss");
     background: linear-gradient(180deg, #9b837b, #8a736d, #76665b, #5f5754, #3e3c3a);
     width: 100%;
     z-index: 10;
     position: relative;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: 
-        "logtit navfoot rrss"
-        "logtit derechos rrss"
-        ;
 }
 
 .logoTituloFooter {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: "GoodBrush";
-    color: #FAF3E0;
+    grid-area: logtit;
+    @include flex-wrap;
+    color: $color-primario;
     column-gap: 1rem;
     align-items: center;
     justify-content: space-around;
-    grid-area: logtit;
+
+    & img {
+        width: 3rem;
+        margin: 1rem;
+    }
+
+    & .tituloFooter {
+        @include flex-wrap;
+    }
 }
 
-.logoTituloFooter img{
-    width: 3rem;
-    margin: 1rem;
-}
-
-.tituloFooter{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.navBarFooter{
-    align-self: center;
-    justify-self: center;
+.navBarFooter {
     grid-area: navfoot;
+    align-self: center;
 }
 
 .derechosFooter {
-    display: flex;
-    flex-wrap: wrap;
+    grid-area: derechos;
+    @include flex-wrap;
     align-self: center;
     justify-content: center;
     text-align: center;
-    color: #FAF3E0;
-    grid-area: derechos;
+    color: $color-primario;
 }
 
-.rrssFooter{
-    display: flex;
-    flex-wrap: wrap;
+.rrssFooter {
+    grid-area: rrss;
+    @include flex-wrap;
     align-items: center;
     justify-content: center;
-    align-content: center;
     column-gap: 1rem;
-    grid-area: rrss;
 }

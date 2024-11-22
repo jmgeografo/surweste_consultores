@@ -1,29 +1,24 @@
 #form {
-    font-family: "GoboldRegular";
-    color: #FAF3E0;
-    background: #225038e6;
+    grid-area: formu;
+    color: $color-primario;
+    background: $color-terciario;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: $border-radius;
     width: 100%;
     margin-bottom: 0.5rem;
-    grid-area: formu;
     align-self: stretch;
-}
 
-#form .form-control {
-    font-family: "Lato";
-}
+    &form-control::placeholder {
+        font-size: smaller;
+        color: lightslategray;
+    }
 
-#form .form-control::placeholder {
-    font-size: smaller;
-    color: lightslategray;
-}
-
-#form .botones{
-    justify-self: center;
+    &botones {
+        justify-self: center;
+    }
 }
 
 .mapa {
     grid-area: mapa;
-    border-radius: 10px;
+    border-radius: $border-radius;
 }

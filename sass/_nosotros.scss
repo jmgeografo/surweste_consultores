@@ -1,7 +1,8 @@
-.main__nosotros__videolong, .main__nosotros__videolong__2 {
+.main__nosotros__videolong,
+.main__nosotros__videolong__2 {
     height: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.5);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
 }
 
 .main__nosotros__videolong {
@@ -10,4 +11,78 @@
 
 .main__nosotros__videolong__2 {
     grid-area: vidlong2;
+}
+
+.card-group {
+    grid-area: cardGroup;
+    gap: 1.5rem;
+    @include flex-wrap;
+    justify-content: space-evenly;
+}
+
+.card .btn-primary,
+.asideaccion .btn-primary,
+#form .btn-primary,
+.btn-secondary,
+.accordion,
+.accordion-item,
+.accordion-header,
+.accordion-body,
+.accordion-collapse,
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-btn-icon,
+.subtitulo a {
+    @include botonera;
+}
+
+.card .btn-primary:hover,
+.asideaccion .btn-primary:hover,
+#form .btn-primary:hover,
+.btn-secondary:hover,
+.accordion-button:hover,
+.accordion-btn-icon:hover,
+.subtitulo a:hover {
+    @include botonerahover
+}
+
+.infoprincipal {
+    grid-area: article;
+    color: $color-primario;
+    background-color: $color-senario;
+    justify-self: stretch;
+    align-self: start;
+    text-align: justify;
+    width: 100%;
+    padding: 1rem;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+    & h2 {
+        text-align: center;
+    }
+}
+
+%encabezados {
+    text-align: center;
+    color: $color-primario;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px black;
+    box-shadow: $box-shadow;
+    background-color: #A1887FB3;
+    padding: 0.5rem;
+    border-radius: $border-radius;
+}
+
+.titulo {
+    @extend %encabezados;
+    grid-area: title;
+}
+
+.subtitulo {
+    @extend %encabezados;
+    grid-area: subtitle;
 }

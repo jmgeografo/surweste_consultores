@@ -1,0 +1,39 @@
+@mixin grid-layout ($rows, $columns, $areas) {
+    grid-template-rows: $rows;
+    grid-template-columns: $columns;
+    grid-template-areas: $areas;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin botonera {
+    background-color: $color-cuaternario;
+    border: none;
+    color: $color-primario;
+    margin-bottom: 1rem;
+    border-radius: $border-radius;
+    text-decoration: none;
+    align-self: center;
+    box-shadow: none;
+}
+
+@mixin botonerahover {
+    background-color: $color-primario;
+    color: $color-secundario;
+    transform: scale(1.2);
+}
+
+@mixin center-padding10 {
+    align-items: center;
+    justify-items: center;
+    padding-top: 10.5rem;
+}
+
+@mixin center-padding9 {
+    align-items: center;
+    justify-items: center;
+    padding-top: 9.5rem;
+}

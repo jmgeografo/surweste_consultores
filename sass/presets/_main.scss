@@ -1,100 +1,68 @@
 /*Cuerpo*/
-main {
+%main {
+    display: grid;
+    align-items: start;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 8rem 1rem 2rem 1rem;
     max-width: 100%;
     min-height: 100vh;
     background-image: url(../images/bgsl.gif);
     background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-    padding-top: 8rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: grid;
+    background-position: center;
+    background-size: cover;
 }
 
-/*Contenedores*/
 #main__index {
-    grid-template-rows: auto;
-    grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr;
-    grid-template-areas:
-        "main__index__sloganswc main__index__sloganswc mapaswc aside"
+    @extend %main;
+    @include grid-layout (auto, repeat(3, 1.5fr) 1fr, "main__index__sloganswc main__index__sloganswc mapaswc aside"
         "vidshort fotoportada mapaswc aside"
-        "vidshort testimon mapaswc aside"
-    ;
-    align-items: start;
-    gap: 2rem;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+        "vidshort testimon mapaswc aside");
 }
 
 #main__servicios {
-    align-items: start;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "title title title title"
+    @extend %main;
+    @include grid-layout (auto, repeat(4, 1fr), "title title title title"
         "target target target target"
-        "faq faq aside aside"
-        ;
-    gap: 2rem;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;   
+        "faq faq aside aside");
+
+    &.asideaccion {
+        z-index: 0;
+        margin-bottom: 1rem;
+    }
+
+    &.card img {
+        width: 10rem;
+    }
 }
 
 #main__portafolio {
-    align-items: start;
-    grid-template-rows: auto;
-    grid-template-columns: 4fr 1fr;
-    grid-template-areas:
-        "title aside"
-        "contenedorportafolio aside"
-        ;
-    gap: 2rem;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;      
+    @extend %main;
+    @include grid-layout (auto, 4fr 1fr, "title aside" "contenedorportafolio aside");
 }
 
 #main__nosotros {
-    align-items: start;
-    grid-template-rows: auto;
-    grid-template-columns: 2fr 1.5fr 1fr;
-    grid-template-areas: 
-        "title title aside"
+    @extend %main;
+    @include grid-layout (auto, 2fr 1.5fr 1fr, "title title aside"
         "article vidlong aside"
         "article vidlong2 aside"
         "subtitle subtitle aside"
-        "cardGroup cardGroup aside";
-    gap: 2rem;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;    
+        "cardGroup cardGroup aside");
+
+    &.card img {
+        max-height: 10rem;
+        margin-bottom: 1rem;
+    }
 }
 
 #main__contacto {
-    align-items: start;
-    grid-template-rows: auto;
-    grid-template-columns: 3fr 5fr 3fr;
-    grid-template-areas:
-        "title title title"
+    @extend %main;
+    @include grid-layout (auto, 3fr 5fr 3fr, "title title title"
         "article article formu"
-        "mapa faq formu";
-    gap: 1.5rem;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;   
-    }
+        "mapa faq formu");
+}
 
 #main__404 {
-    display: grid;
-    grid-template-areas:
-    "title"
-    "subtitle"
+    @extend %main;
+    @include grid-layout (auto, auto, "title" "subtitle");
 }

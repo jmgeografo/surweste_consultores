@@ -50,18 +50,18 @@
             zoomControl: false
         }).setView([-34.45, -70.65], 4);
 
-        window.addEventListener('message', function(event) {
-   
-    if (typeof event.data === 'object' && event.data.hasOwnProperty('matches')) {
-        if (event.data.matches) {
-            
-            map.setView([-34.45, -70.65], 6); 
-        } else {
-            
-            map.setView([-34.45, -70.65], 4); 
-        }
-    }
-}, false);
+        window.addEventListener('message', function (event) {
+
+            if (typeof event.data === 'object' && event.data.hasOwnProperty('matches')) {
+                if (event.data.matches) {
+
+                    map.setView([-34.45, -70.65], 6);
+                } else {
+
+                    map.setView([-34.45, -70.65], 4);
+                }
+            }
+        }, false);
 
         L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
@@ -105,7 +105,7 @@
             metric: true, imperial: false
         }).addTo(map);
 
-        
+
     </script>
 
 </body>

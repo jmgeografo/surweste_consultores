@@ -1,37 +1,63 @@
-.infosecundaria{
+.infosecundaria {
     grid-area: faq;
-    background-color: #3D5A80F2;
+    background-color: $color-quinario;
+    color: $color-primario;
     text-align: justify;
-    color: #FAF3E0; 
     align-self: stretch;
     margin-top: 0 auto;
     margin-bottom: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: $box-shadow;
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: $border-radius;
+
+    h4 {
+        text-align: center;
+        border-bottom: 2px solid $color-primario;
+    }
+
+    h6 {
+        font-size: 1.1rem;
+        color: $color-primario;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-cuaternario;
+        }
+    }
+
+    p {
+        margin-bottom: 1.2rem;
+    }
 }
 
-.infosecundaria h4{
+.dropdown-menu,
+.dropdown-item {
+    background-color: $color-cuaternario;
+    color: $color-primario;
+    font-family: "Lato";
+    box-shadow: $box-shadow;
+}
+
+.card {
+    grid-area: target;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    max-width: 100%;
+    color: $color-primario;
+    background-color: $color-senario;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
     text-align: center;
-    font-size: 1.6rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #FAF3E0;
-    margin-bottom: 1rem;
-}
 
-.infosecundaria h6 {
-    font-size: 1.1rem;
-    color: #FAF3E0;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
+    p {
+        text-align: justify;
+    }
 
-.infosecundaria h6:hover {
-    color: #D84315;
-}
-
-.infosecundaria p {
-    margin-bottom: 1.2rem;
+    img {
+        max-height: 10rem;
+        margin-bottom: 1rem;
+    }
 }
